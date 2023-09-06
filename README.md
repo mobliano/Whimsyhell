@@ -14,8 +14,7 @@ Modpack root containing directories for each version of Minecraft
 `/whimsyhell/<minecraft-version>/<whimsyhell-version>/`
 
 # Discord Link
-Join our discord server to discuss any topic you have about the modpack.
-[[SQL]SkrubzQuicklyLosing](https://discord.gg/5996qMu)
+Join our discord server to discuss any topic you have about the modpack - [[SQL]SkrubzQuicklyLosing](https://discord.gg/5996qMu)
 
 # Public Game Server
 Anyone is welcome to join our hosted game server at - `mc.whimsyhell.com:25565`
