@@ -180,20 +180,42 @@ ServerEvents.recipes(event => {
     // event.recipes.create.mixing(output[], input[]).superheated()
     event.recipes.create.mixing('whimsyhell:whimsy_ingot', ['whimsyhell:whimsy_dust', 'mysticalagriculture:awakened_supremium_ingot']).superheated()
 
+    // Standard Crafting
+    // event.shaped(Item.of('output', count), pattern[], keys{})
+    // event.shaped(
+    //     Item.of('whimsyhell:whimsy_sword', 1),
+    //     [
+    //         'WWW',
+    //         'MFW',
+    //         'AMW'
+    //     ],
+    //     {
+    //         A: 'theabyss:abyss_sword',
+    //         F: 'forbidden_arcanus:eternal_stella',
+    //         M: 'mysticalagradditions:nether_star_crux',
+    //         W: 'whimsyhell:whimsy_ingot'
+    //     }
+    // )
 
-    // event.shaped(Item.of('output', <output count>), [<shape>],{<shape_mappings>})
-    event.shaped(
-        Item.of('whimsyhell:whimsy_sword', 1),
+    // Create Mechanical Crafting (Supports up to 9x9 grid)
+    // event.recipes.create.mechanical_crafting(output, pattern[], keys{})
+    event.recipes.create.mechanical_crafting(
+        'whimsyhell:whimsy_sword',
         [
-            'WWW',
-            'MFW',
-            'AMW'
+            '  W  ',
+            '  W  ',
+            '  W  ',
+            'OFAFO',
+            '  M  ',
+            '  M  '
         ],
         {
             A: 'theabyss:abyss_sword',
             F: 'forbidden_arcanus:eternal_stella',
             M: 'mysticalagradditions:nether_star_crux',
+            O: 'apotheosis:mythic_material',
             W: 'whimsyhell:whimsy_ingot'
         }
     )
+
 })
