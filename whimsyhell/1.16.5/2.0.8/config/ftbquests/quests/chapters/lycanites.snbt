@@ -1,0 +1,78 @@
+{
+	id: "5FA4D2E86208B55F"
+	group: ""
+	order_index: 4
+	filename: "lycanites"
+	title: "Lycanites"
+	icon: "lycanitesmobs:soulgazer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Whimsyhell is full of very deadly creatures, many of which are Lycanites Mobs. Not all are bad though! Some will heal you, while others may provide buffs, or even a ride!"
+			id: "77AB12A91B11F7D1"
+			tasks: [{
+				id: "5AF0A440951C6913"
+				type: "checkmark"
+				title: "Lycanites!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Using a summoning staff you can call on some friends to help you out! You'll need to gain knowledge 2 of each mob in order to summon them."
+			dependencies: ["77AB12A91B11F7D1"]
+			id: "6D32E33446A3D845"
+			tasks: [{
+				id: "5878B5C8FE1324DB"
+				type: "item"
+				item: {
+					id: "lycanitesmobs:summoningstaff"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Use a Soulgazer on an entity to add it to your beastiary. This also helps gain knowledge."
+			dependencies: ["77AB12A91B11F7D1"]
+			id: "66A2BADAEAD3FEAB"
+			tasks: [{
+				id: "6F42B46EEF3E0C65"
+				type: "item"
+				item: "lycanitesmobs:soulgazer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Use a Soulstone on a tamed creature to bind it to you, allowing it to be called on any time. Bound creatures can also be re-summoned after an untimely demise."
+			dependencies: ["77AB12A91B11F7D1"]
+			id: "0EF5F55E6D24744D"
+			tasks: [{
+				id: "5D305DFF943F96C1"
+				type: "item"
+				item: "lycanitesmobs:soulstone"
+			}]
+		}
+		{
+			icon: "lycanitesmobs:soulstone_aberration"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "You will find massive dungeons in Whimsyhell, which contain lots of loot, and some bosses will drop very special \"eyes\"!"
+			dependencies: ["77AB12A91B11F7D1"]
+			id: "0743E308CDBEDDE4"
+			tasks: [{
+				id: "5BAAFEEED1A98CC9"
+				type: "checkmark"
+				title: "Lycanites Dungeons"
+			}]
+		}
+	]
+}

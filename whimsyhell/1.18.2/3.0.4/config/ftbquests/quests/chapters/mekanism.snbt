@@ -1,0 +1,382 @@
+{
+	id: "471D8A0E138CB26B"
+	group: ""
+	order_index: 7
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:metallurgic_infuser"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Mekanism is huge and has a lot of features, some of which have been disabled in this pack. To get to the endgame of Whimsyhell you will need to generate power from a fission reactor, produce polonium pellets, and build a QIO system for the best storage! See the following link for more details: https://wiki.aidancbrady.com/wiki/Main_Page"
+			id: "6D32D6C370557164"
+			tasks: [{
+				id: "51D7EF430A2675A6"
+				type: "checkmark"
+				title: "Mekanism - The King of automation and ore processing!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["6A34CFB75FE0F7EB"]
+			id: "2F91F62996C8FD67"
+			tasks: [{
+				id: "2C858F0C9C22E71D"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["2F91F62996C8FD67"]
+			optional: true
+			id: "3DF055AA38210A58"
+			tasks: [{
+				id: "7C092CEF3E1B0B95"
+				type: "item"
+				item: "mekanismgenerators:gas_burning_generator"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			dependencies: ["2F91F62996C8FD67"]
+			optional: true
+			id: "4D167D6012B0A59F"
+			tasks: [{
+				id: "3D34883E1293EF49"
+				type: "item"
+				item: "mekanismgenerators:advanced_solar_generator"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			subtitle: "Gotta store that power!"
+			dependencies: ["2F91F62996C8FD67"]
+			id: "184686920168A02C"
+			tasks: [{
+				id: "6EFEBCCBA7E613DA"
+				type: "item"
+				item: "mekanism:basic_energy_cube"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			subtitle: "You can build an Induction Matrix, a multiblock structure which holds A LOT of energy. You'll need one of these to store power produced from a fission reactor and turbine."
+			dependencies: [
+				"6E1C72F60ACD163E"
+				"013B37DB2B5D7142"
+			]
+			id: "4E36607D0A8E255C"
+			tasks: [{
+				id: "30A0E9C8439EF676"
+				type: "item"
+				item: "mekanism:basic_induction_cell"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["6D32D6C370557164"]
+			id: "2E002157F158275D"
+			tasks: [{
+				id: "2870E5B3B8104C36"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["199FDD13CACC242A"]
+			optional: true
+			id: "197D46428DC5B307"
+			tasks: [{
+				id: "437855A4AAE3C310"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["197D46428DC5B307"]
+			optional: true
+			id: "6964EC5E73ED398D"
+			tasks: [{
+				id: "371FCE98C81E77EE"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Use this to power your first Metallurgic Infuser"
+			dependencies: ["6D32D6C370557164"]
+			id: "6A34CFB75FE0F7EB"
+			tasks: [{
+				id: "559B4253B59A0360"
+				type: "item"
+				item: "mekanismgenerators:heat_generator"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			subtitle: "Connecting these machines in this order will provide you with 3x ore processing. You can take this further to both 4x and 5x ore processing! https://wiki.aidancbrady.com/wiki/Ore_Processing"
+			dependencies: ["6964EC5E73ED398D"]
+			optional: true
+			id: "3E9BF75AD9F29BCF"
+			tasks: [{
+				id: "78C56FBBF547E79B"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["6D32D6C370557164"]
+			optional: true
+			id: "4A49A0EEA8FFD0ED"
+			tasks: [{
+				id: "7251F7B70CEF82D0"
+				type: "item"
+				item: "mekanism:electric_pump"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["4A49A0EEA8FFD0ED"]
+			optional: true
+			id: "3B574950F089F866"
+			tasks: [{
+				id: "61B80BC08ABBD75F"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["3B574950F089F866"]
+			optional: true
+			id: "199FDD13CACC242A"
+			tasks: [{
+				id: "37D48162E74F910C"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+		}
+		{
+			title: "Fissle Fuel"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "You will need to make Fissile Fuel to power a Fission Reactor. This is a long processing chain, but is well documented here: https://wiki.aidancbrady.com/wiki/Fissile_Fuel"
+			min_required_dependencies: 1
+			dependencies: ["6D32D6C370557164"]
+			optional: true
+			id: "083837D3DB8C216E"
+			tasks: [{
+				id: "7D7BE794E15DBD81"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		}
+		{
+			title: "Fission Reactor"
+			x: 0.0d
+			y: -4.0d
+			subtitle: "A Fission Reactor is a multiblock structure which you will want to cool with water. This produces steam, which you will feed into a turbine to produce power. The waste can be processed into polonium pellets, which is required to make your endgame gear! BUILD THIS IN A SAFE PLACE!!! https://wiki.aidancbrady.com/wiki/Fission_Reactor"
+			dependencies: ["083837D3DB8C216E"]
+			id: "0DCCBB14BABAE9B1"
+			tasks: [{
+				id: "643D508585247203"
+				type: "item"
+				item: "mekanismgenerators:fission_reactor_port"
+			}]
+		}
+		{
+			title: "Industrial Turbine"
+			x: 0.0d
+			y: -6.0d
+			subtitle: "Feeding steam into the Turbine will produce power and water. Feed the water back into the reactor and run the power into an Induction Matrix. If any of these systems stop working, the Fission Reactor could MELTDOWN! https://wiki.aidancbrady.com/wiki/Industrial_Turbine"
+			dependencies: ["0DCCBB14BABAE9B1"]
+			id: "6E1C72F60ACD163E"
+			tasks: [{
+				id: "2E169D2D159DC917"
+				type: "item"
+				item: "mekanismgenerators:turbine_blade"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["0DCCBB14BABAE9B1"]
+			id: "283565C5B45A42DF"
+			tasks: [{
+				id: "0105CF758AB606FF"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.5d
+			dependencies: ["283565C5B45A42DF"]
+			id: "0A27DC777860D431"
+			tasks: [{
+				id: "21C77898A6A017A9"
+				type: "item"
+				item: "mekanism:qio_drive_array"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			subtitle: "The Thermal Evaporation Plant is used to create brine and lithium. Lithium dust is required to make the Induction Matrix, which can be made by crystalizing lithium gas in a crystalizer."
+			id: "013B37DB2B5D7142"
+			tasks: [{
+				id: "62D56F287B09FD0B"
+				type: "item"
+				item: "mekanism:thermal_evaporation_controller"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			dependencies: ["2E002157F158275D"]
+			id: "12E7C9B7C7C211C9"
+			tasks: [{
+				id: "52D97466C7650C26"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["2E002157F158275D"]
+			id: "38269EF0843B2E13"
+			tasks: [{
+				id: "3E9FF7B9755E4D3D"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			dependencies: ["2E002157F158275D"]
+			id: "17CB87D7B416A36B"
+			tasks: [{
+				id: "5EE15F945E8D3162"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["2E002157F158275D"]
+			id: "76F4F4887E203348"
+			tasks: [{
+				id: "1E3A2C88CD0EA8C1"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["2E002157F158275D"]
+			id: "6D1833A37E227F3B"
+			tasks: [{
+				id: "3405FE020AE34C17"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["2E002157F158275D"]
+			id: "417DA8CDC154B3D0"
+			tasks: [{
+				id: "4973CBC42311298B"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["2E002157F158275D"]
+			id: "1F4522CA5BF825D1"
+			tasks: [{
+				id: "23544EED3A94D53D"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			optional: true
+			id: "362FD3468C671781"
+			tasks: [{
+				id: "1EB2E6566E93ED5E"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			optional: true
+			id: "0ED725C3C247826A"
+			tasks: [{
+				id: "655E6B824BFE7BE0"
+				type: "item"
+				item: "mekanism:dust_refined_obsidian"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: [
+				"362FD3468C671781"
+				"0ED725C3C247826A"
+			]
+			optional: true
+			id: "2174F4A4F3068705"
+			tasks: [{
+				id: "1771581A791CC933"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			subtitle: "The best early/mid-game material for tools, weapons and armor."
+			dependencies: ["2174F4A4F3068705"]
+			optional: true
+			id: "60AAFF874070AEA5"
+			tasks: [{
+				id: "54F6BA175C9B8797"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+			}]
+		}
+	]
+}

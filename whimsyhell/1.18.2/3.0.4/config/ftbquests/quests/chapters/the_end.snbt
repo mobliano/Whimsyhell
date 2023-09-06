@@ -1,0 +1,138 @@
+{
+	id: "50EEC609E833AB5F"
+	group: ""
+	order_index: 19
+	filename: "the_end"
+	title: "The End"
+	icon: "endrem:ancient_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "endrem:ancient_portal_frame"
+			x: -0.5d
+			y: 0.0d
+			id: "4D36AAFE17F5CD9C"
+			tasks: [{
+				id: "754261531CF70B11"
+				type: "advancement"
+				advancement: "minecraft:end/root"
+				criterion: ""
+			}]
+		}
+		{
+			icon: "minecraft:dragon_head"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["4D36AAFE17F5CD9C"]
+			id: "2A51F2BA00FCA9DF"
+			tasks: [{
+				id: "412B85684482E982"
+				type: "kill"
+				title: "Kill The Ender Dragon"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6896AF53459CBC64"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			title: "Collect a Void Crystal"
+			icon: "stalwart_dungeons:void_crystal"
+			x: 7.5d
+			y: 0.0d
+			subtitle: "I wonder if TNT would work..."
+			optional: true
+			id: "243DD38EBFA8CA69"
+			tasks: [{
+				id: "649EAE2830C0B5CA"
+				type: "item"
+				item: "stalwart_dungeons:void_crystal"
+			}]
+			rewards: [{
+				id: "4355F1BF6F5AB5DE"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			subtitle: "Capsid and Mosquito Crimson Lava can create the Void Worm"
+			dependencies: ["0A3378F1077CEBF8"]
+			id: "1839FE2EA7937C34"
+			tasks: [{
+				id: "3D9577E7AC16A0C6"
+				type: "kill"
+				title: "Summon and Kill The Void Worm"
+				icon: "alexsmobs:void_worm_eye"
+				entity: "alexsmobs:void_worm"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "11658E47F3B6904D"
+					type: "item"
+					item: "kubejs:whimsy_ingot"
+					count: 9
+				}
+				{
+					id: "43800813058D8DDB"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "08DEDC4BF680114A"
+					type: "item"
+					item: "create:creative_blaze_cake"
+				}
+				{
+					id: "24B3B27DF34F4D60"
+					type: "item"
+					item: "theabyss:broken_radio"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["2A51F2BA00FCA9DF"]
+			id: "2A991A7A07F48137"
+			tasks: [{
+				id: "717EFC6BD2CDE31C"
+				type: "kill"
+				title: "Kill a Ender Golem"
+				icon: "cataclysm:void_core"
+				entity: "cataclysm:ender_golem"
+				value: 1L
+			}]
+			rewards: [{
+				id: "7E62881A704D97D8"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["2A991A7A07F48137"]
+			id: "0A3378F1077CEBF8"
+			tasks: [{
+				id: "7DF7335446AA6AAF"
+				type: "kill"
+				title: "Kill the Ender Guardian"
+				icon: "cataclysm:ender_guardian_spawner"
+				entity: "cataclysm:ender_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "5F9EA404362555F6"
+				type: "xp"
+				xp: 300
+			}]
+		}
+	]
+}

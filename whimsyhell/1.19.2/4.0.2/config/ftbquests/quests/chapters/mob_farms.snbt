@@ -1,0 +1,115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mob_farms"
+	group: ""
+	id: "215C0C7B5E32C932"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:zombie_head"
+			id: "573B75F3AFEF65DD"
+			size: 1.25d
+			subtitle: "Building traditional mob farms introduces a lot of entities, which in turn will lag out your world. To improve performance, try using Easy Mob Farms instead. These come in multiple tiers, starting with copper."
+			tasks: [{
+				id: "40F32AAA330D123A"
+				title: "Building Mob Farms"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "05E6C4E0019E5E52"
+			tasks: [{
+				id: "457101D4F6662018"
+				item: "easy_mob_farm:copper_animal_plains_farm"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "0FE94E3566DD5F2C"
+			tasks: [{
+				id: "51F38C7DCE254EE7"
+				item: "easy_mob_farm:copper_bee_hive_farm"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "607CDA0A9F718916"
+			tasks: [{
+				id: "275DD828C40F3698"
+				item: "easy_mob_farm:copper_desert_farm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "36ADBC0BB9FAD305"
+			tasks: [{
+				id: "67653B594F1FB145"
+				item: "easy_mob_farm:copper_jungle_farm"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "554B4F2235B390BE"
+			tasks: [{
+				id: "56502682A2C20869"
+				item: "easy_mob_farm:copper_monster_plains_cave_farm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "3FFA68B85BDFC471"
+			tasks: [{
+				id: "4B1CDBEA1136BB6E"
+				item: "easy_mob_farm:copper_nether_fortress_farm"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			id: "7ACF58C8A1708D31"
+			tasks: [{
+				id: "21C7C8D81B6A8D79"
+				item: "easy_mob_farm:copper_ocean_farm"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "0D3D0C71C9A6E9BA"
+			tasks: [{
+				id: "56693E14356A0C9F"
+				item: "easy_mob_farm:copper_swamp_farm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "3DBA51087E6ACD2D"
+			tasks: [{
+				id: "334DF092A5909E44"
+				item: "easy_mob_farm:copper_mob_farm_template"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+	]
+	title: "Mob Farms"
+}

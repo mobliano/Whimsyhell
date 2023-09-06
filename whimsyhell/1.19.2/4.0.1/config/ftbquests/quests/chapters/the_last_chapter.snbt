@@ -1,0 +1,222 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_last_chapter"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "patchouli:guide_book"
+		tag: {
+			"patchouli:book": "theabyss:abyssbookitem"
+		}
+	}
+	id: "53FAF0A851398EA6"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "42CDDCDE36FD0351"
+			rewards: [
+				{
+					id: "082C6C963D58BA8C"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "289E5B1F6240F00F"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			subtitle: "Good luck!"
+			tasks: [{
+				dimension: "theabyss:the_abyss"
+				icon: "theabyss:unstable_obsidian"
+				id: "163E6695206A258E"
+				title: "Enter The Abyss"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "7A7BC9ED0BE5D709"
+			rewards: [
+				{
+					id: "191FB7C4546646AF"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "79D1EC0C05F615D5"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "theabyss:elder"
+				icon: "theabyss:elder_eye"
+				id: "66F13D8BD1F9E7D1"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "0040EE8193E308E6"
+			rewards: [
+				{
+					id: "2A6AA25CB88C87D2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "7D2889C41F759DAC"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "theabyss:magician"
+				icon: "theabyss:magician_spawn_egg"
+				id: "5BB17E8BF77B2860"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "2D4662A47AF18D0B"
+			rewards: [
+				{
+					id: "03FA27A70F78E855"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "3B962E2B309D53B6"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "theabyss:crystal_golem"
+				icon: "theabyss:crystal_hand"
+				id: "712E7AD054C2C639"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1F3C8FCDE10603CC"
+				"7A7BC9ED0BE5D709"
+				"2D4662A47AF18D0B"
+				"0040EE8193E308E6"
+				"3096B5DE750051B1"
+			]
+			id: "1630DBFF8B6A6AED"
+			rewards: [
+				{
+					id: "22F6454CF2DEC07D"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					id: "329354E910B27208"
+					item: "create:creative_motor"
+					type: "item"
+				}
+				{
+					id: "2231C9E45DCC7A44"
+					item: {
+						Count: 1b
+						id: "theabyss:ring_of_ghosts"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A164C2973476FE4"
+					item: "refinedstorage:creative_storage_disk"
+					type: "item"
+				}
+				{
+					id: "52A945821ABF6AAF"
+					item: "refinedstorage:creative_fluid_storage_disk"
+					type: "item"
+				}
+			]
+			subtitle: "To summon Nightblade all the Brick Stone Pillars in the Nightblade Summoning Structure needs to be lit up. It can be lit up using Soul Heart. Once all Brick Stone Pillars are lit you must place Eye Of Abyss on the Night Altar. Once the Eye Of Abyss is placed lightning will strike the Night Altar and Nightblade would be summoned."
+			tasks: [{
+				entity: "theabyss:night_blade_boss_clone"
+				icon: "theabyss:night_altar_activated"
+				id: "287761444F6DA85C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "3096B5DE750051B1"
+			rewards: [
+				{
+					id: "7B9A9AA35055C5F4"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "2B357E26D37E0155"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "theabyss:abyssaur"
+				icon: "theabyss:abyssaur_spawn_egg"
+				id: "158C01F0B49FA191"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "1F3C8FCDE10603CC"
+			rewards: [
+				{
+					id: "099FE762180FCD6F"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "655496A2D6B190D7"
+					item: "whimsyhell:whimsy_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "theabyss:the_roka"
+				icon: "theabyss:roka_horn"
+				id: "1E4C364F45F57EB7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+	]
+	title: "The Abyss"
+}

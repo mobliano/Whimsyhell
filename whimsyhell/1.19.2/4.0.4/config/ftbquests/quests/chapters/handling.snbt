@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "handling"
+	group: ""
+	id: "60F6B8B42B27BF5C"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "fluxnetworks:flux_configurator"
+			id: "1758F78218461EA7"
+			size: 1.25d
+			subtitle: "You can use pipez and flux networks to help manage moving things around, and providing power in a safe and performant way."
+			tasks: [{
+				id: "2A71ED4FA400C444"
+				title: "You Can Handle It!"
+				type: "checkmark"
+			}]
+			title: "You Can Handle It!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1758F78218461EA7"]
+			id: "04E119872E736A3E"
+			tasks: [{
+				id: "6B420DCF05E09BCF"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E119872E736A3E"]
+			id: "49F658E0B8B4A7EC"
+			tasks: [{
+				id: "579AEF093A3398C3"
+				item: "fluxnetworks:flux_core"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49F658E0B8B4A7EC"]
+			id: "744F448257652AE0"
+			tasks: [{
+				id: "46766510568E0159"
+				item: "fluxnetworks:flux_block"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["744F448257652AE0"]
+			id: "580565F32BB0E34A"
+			tasks: [{
+				id: "77F318B1C7EA01A8"
+				item: "fluxnetworks:flux_plug"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["580565F32BB0E34A"]
+			id: "6069FD036F455442"
+			tasks: [{
+				id: "4ED0AA23FD08B26C"
+				item: "fluxnetworks:flux_point"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["744F448257652AE0"]
+			id: "4ADD292D28B53ECD"
+			tasks: [{
+				id: "461529B2ABF3D88A"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4ADD292D28B53ECD"]
+			id: "45F9423656257F72"
+			tasks: [{
+				id: "416E038C7FCDACFC"
+				item: "fluxnetworks:herculean_flux_storage"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45F9423656257F72"]
+			id: "011753090DB25DB5"
+			tasks: [{
+				id: "5AB11BE3E9EA71B4"
+				item: "fluxnetworks:gargantuan_flux_storage"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6069FD036F455442"]
+			id: "5D55B543B8865227"
+			tasks: [{
+				id: "297B27ED6859936F"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1758F78218461EA7"]
+			id: "6FD5BE20F8AFC599"
+			tasks: [{
+				id: "7B720813BA3B93ED"
+				item: "pipez:wrench"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FD5BE20F8AFC599"]
+			id: "6153F0F6C39040D1"
+			tasks: [{
+				id: "020FEDBDB42EC4B3"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FD5BE20F8AFC599"]
+			id: "454A4D6A9A8EB405"
+			tasks: [{
+				id: "2506EB9E48767FC3"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FD5BE20F8AFC599"]
+			id: "33BDED5D2C5B4D03"
+			tasks: [{
+				id: "4DCF9B352F28ECF0"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"33BDED5D2C5B4D03"
+				"454A4D6A9A8EB405"
+				"6153F0F6C39040D1"
+			]
+			id: "355480FEE08B3FD9"
+			tasks: [{
+				id: "6F34B9E2BA3E25C7"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Handling"
+}

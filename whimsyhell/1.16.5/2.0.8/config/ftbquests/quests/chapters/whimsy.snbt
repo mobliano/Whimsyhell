@@ -1,0 +1,129 @@
+{
+	id: "5428A3761EF511C6"
+	group: ""
+	order_index: 9
+	filename: "whimsy"
+	title: "Whimsy!"
+	icon: "kubejs:whimsy_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -0.5d
+			subtitle: "It doesn't get any better than this!"
+			id: "3A5CC6BB0519B322"
+			tasks: [{
+				id: "6AA647BD0F30B0EB"
+				type: "checkmark"
+				title: "Give em WhimsyHELL!"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			subtitle: "Those Lycanite parts are better crushed!"
+			dependencies: ["3A5CC6BB0519B322"]
+			id: "0DC611374AA3C9AA"
+			tasks: [{
+				id: "0E2F308CB85D8BEA"
+				type: "item"
+				item: "kubejs:crushed_lycanite"
+			}]
+			rewards: [{
+				id: "4AA5A85C6B5DB8BA"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			subtitle: "That was a lot of work to make this little crystal! I wonder what happens when we mix it with Netherite dust..."
+			dependencies: ["0DC611374AA3C9AA"]
+			id: "13295E3F2B537043"
+			tasks: [{
+				id: "3192FC937534D072"
+				type: "item"
+				item: "kubejs:whimsy_crystal"
+			}]
+			rewards: [{
+				id: "528044D4F3A9AD88"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			subtitle: "Ooooh! This looks like it will make an excellent coating, but wait.. could it be mixed into something even more powerful I wonder?!?"
+			dependencies: ["13295E3F2B537043"]
+			id: "05155E8A41A8798C"
+			tasks: [{
+				id: "694770C7FBEBE384"
+				type: "item"
+				item: "kubejs:whimsy_dust"
+			}]
+			rewards: [{
+				id: "2B46B68AF9273CF9"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			subtitle: "Ooooh my! Look at the weapons and tools I can make!"
+			dependencies: [
+				"05155E8A41A8798C"
+				"25900B7490D5FD54"
+			]
+			dependency_requirement: "one_completed"
+			id: "0BAFE704253D0274"
+			tasks: [{
+				id: "0AF31E8EEFD03AD4"
+				type: "item"
+				item: "kubejs:whimsy_ingot"
+			}]
+			rewards: [{
+				id: "1499696EFA59F0AC"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			subtitle: "These nuggets are quite shiny! I wonder if I can make anything with them..."
+			optional: true
+			id: "25900B7490D5FD54"
+			tasks: [{
+				id: "2C3A02F37C10BC29"
+				type: "item"
+				item: "kubejs:whimsy_nugget"
+			}]
+			rewards: [{
+				id: "4FCE767D8EBE7F72"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			subtitle: "Ahhh yes! An armor material fit for a King; or Queen for that matter!"
+			dependencies: ["0BAFE704253D0274"]
+			id: "342832D7E6049800"
+			tasks: [{
+				id: "7423E02B0816B191"
+				type: "item"
+				item: "kubejs:whimsy_plate"
+			}]
+			rewards: [{
+				id: "7A96BCFCE4C8BB2F"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+	]
+}

@@ -1,0 +1,393 @@
+{
+	id: "52773EF811AA49E2"
+	group: ""
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:cobblestone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Whimsyhell!"
+			x: 0.0d
+			y: 0.0d
+			description: ["Welcome to Whimsyhell, an exciting world of not-so-peaceful creatures and painful consequences. Here have a bandage!"]
+			id: "7AE17935282AAAC0"
+			tasks: [{
+				id: "2B33D4B6350C6759"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "4F1997F906B23B9A"
+				type: "item"
+				item: "firstaid:bandage"
+			}]
+		}
+		{
+			title: "Make Cobblestone"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Combine (4) rocks in a crafting grid to make cobblestone"
+			dependencies: ["7AE17935282AAAC0"]
+			id: "4463A022E5F60F73"
+			tasks: [{
+				id: "3AF0D1CCD8416E30"
+				type: "item"
+				item: "notreepunching:stone_loose_rock"
+			}]
+			rewards: [{
+				id: "5000B786B1CF6F81"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Craft a Stick"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Find twigs on the ground. Put them in a crafting grid to make sticks!"
+			dependencies: ["7AE17935282AAAC0"]
+			id: "03D17248592C3069"
+			tasks: [{
+				id: "6F5224470C031837"
+				type: "item"
+				item: "projectvibrantjourneys:twigs"
+			}]
+			rewards: [{
+				id: "401F051EE36B3BE2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			icon: "minecraft:red_bed"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "The longer you go without sleeping, the more tired you will get. Here have a sleeping bag."
+			dependencies: ["7AE17935282AAAC0"]
+			id: "238DC7386E18A85B"
+			tasks: [{
+				id: "5E8FF7FEFF536F64"
+				type: "stat"
+				title: "Your eyes are getting heavy"
+				stat: "minecraft:time_since_rest"
+				value: 20000
+			}]
+			rewards: [{
+				id: "145BCFFEAA0D54E2"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
+			}]
+		}
+		{
+			title: "Food"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Eat many different foods and earn hearts! That's about all it will do for your health though."
+			dependencies: ["7AE17935282AAAC0"]
+			id: "26B51FA81EFB847D"
+			tasks: [{
+				id: "3EDBBEAE33661483"
+				type: "checkmark"
+				title: "Food"
+				icon: "minecraft:apple"
+			}]
+			rewards: [{
+				id: "65098586B1CD5F2E"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			icon: "survive:canteen"
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Make a canteen early! You will use this to make purified water."
+			dependencies: ["7AE17935282AAAC0"]
+			id: "445CF2CB26E5EBE1"
+			tasks: [{
+				id: "7BBDCCBC8CFC8697"
+				type: "item"
+				item: "survive:canteen"
+			}]
+			rewards: [{
+				id: "284523711D6E089D"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "Whimsyhell is a scary place! Finding a village early will help you survive!"
+			dependencies: ["7AE17935282AAAC0"]
+			id: "265250005F3AD078"
+			tasks: [{
+				id: "11AA33FDC055598F"
+				type: "advancement"
+				title: "Find a Village!"
+				advancement: "morevillagers:first_village"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "53AB1F0B75BFC1CA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Waystones"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "You can find waystones throughout Whimsyhell. These will really help you get around the world."
+			dependencies: ["7AE17935282AAAC0"]
+			id: "17716E10A21F71E9"
+			tasks: [{
+				id: "751ACE33E49CA653"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "05F5FCF4F9C339AD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Lose your blueprints? Don't worry!"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "You can always craft flint tools to get started. Right click stone with flint to get a flint shard."
+			dependencies: ["03D17248592C3069"]
+			optional: true
+			id: "0147216EF5B07973"
+			tasks: [{
+				id: "267D768EB94C5DDD"
+				type: "item"
+				item: "notreepunching:flint_shard"
+			}]
+			rewards: [{
+				id: "5D5D1761018EAAF8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			subtitle: "Combine a stick and a flint shard to make a flint knife"
+			dependencies: ["0147216EF5B07973"]
+			optional: true
+			id: "1A4F77BAB4125F8F"
+			tasks: [{
+				id: "2BA94DD8583A4844"
+				type: "item"
+				item: {
+					id: "notreepunching:flint_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A39E4281F08039E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			subtitle: "Get plant fiber by using your flint knife on grass or plants"
+			dependencies: ["1A4F77BAB4125F8F"]
+			optional: true
+			id: "06E98F1F8CE2B636"
+			tasks: [{
+				id: "3DDB94875F1B57AC"
+				type: "item"
+				item: "notreepunching:plant_fiber"
+			}]
+			rewards: [{
+				id: "3D9D5014B5BA8832"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.5d
+			subtitle: "Put 3 plant fibers in a crafting grid to make plant string"
+			dependencies: ["06E98F1F8CE2B636"]
+			optional: true
+			id: "2EFB2A82A4142EB9"
+			tasks: [{
+				id: "230ACE64666880E5"
+				type: "item"
+				item: "notreepunching:plant_string"
+			}]
+			rewards: [{
+				id: "64B9ACDB0D9A023A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.5d
+			subtitle: "Using flint shards, sticks and string, you can craft flint tools."
+			min_required_dependencies: 1
+			dependencies: ["2EFB2A82A4142EB9"]
+			optional: true
+			id: "7D6A02351BF345DE"
+			tasks: [
+				{
+					id: "44043B5FB6EE2881"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5A0A6036416643AF"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45AF56F23FF772D6"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3BAB8DEE90CAF337"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "45AD86AB94F1058B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			subtitle: "Hold sneak while cutting down a tree to harvest it all at once"
+			dependencies: ["03D17248592C3069"]
+			id: "6AA1AB262983752A"
+			tasks: [{
+				id: "3EF7625645FDE105"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+			rewards: [{
+				id: "6DA23EBDF24AD309"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Saw"
+			x: 6.0d
+			y: -1.5d
+			subtitle: "Use a saw on logs in a crafting grid to make planks. A sawmill is a better long-term solution for wood cutting."
+			dependencies: ["6AA1AB262983752A"]
+			id: "08453B40010F0498"
+			tasks: [{
+				id: "36067ACB45043020"
+				type: "item"
+				item: {
+					id: "notreepunching:iron_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6E8B41172DB334AA"
+				type: "item"
+				item: "environmental:sawmill"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			subtitle: "Cook a bucket of water in a furnace to make a bucket of purified water."
+			dependencies: ["445CF2CB26E5EBE1"]
+			id: "22D2442280855F9C"
+			tasks: [{
+				id: "5A1FC52B4984181E"
+				type: "item"
+				item: "survive:purified_water_bucket"
+			}]
+			rewards: [{
+				id: "03D9FE056F5802FD"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Combine a canteen and a bucket of purified water in a crafting grid to fill the canteen with purifed water. You can refill this at any water source block and it will remain purifed unless you drink the entire canteen."
+			dependencies: ["22D2442280855F9C"]
+			id: "4384EABFD28F8258"
+			tasks: [{
+				id: "26DAE95E5946F87B"
+				type: "item"
+				item: {
+					id: "survive:purified_water_canteen"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "429D1F2A94917355"
+				type: "item"
+				item: "survive:charcoal_filter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			subtitle: "These are no ordinary spawners! Check the JEI to see all the ways you can modify them to your liking."
+			id: "2DB4713047F5D2C7"
+			tasks: [{
+				id: "11C870A22041ABDF"
+				type: "item"
+				item: "minecraft:spawner"
+			}]
+			rewards: [{
+				id: "56F6E2C4F85BE811"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

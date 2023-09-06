@@ -1,0 +1,410 @@
+{
+	id: "729ACD006E733691"
+	group: ""
+	order_index: 1
+	filename: "silent_gear"
+	title: "Weapons/Tools/Armor"
+	icon: {
+		id: "theabyss:nosaj_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: 0.0d
+			subtitle: "To make a tool rod, simply combine the blueprint with your desired materials in a crafting grid."
+			dependencies: ["1F4953DE81670392"]
+			id: "3FBB8A51378C2E32"
+			tasks: [{
+				id: "6ED44E26F1C77536"
+				type: "item"
+				item: "silentgear:rod_blueprint"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			subtitle: "To make a pickaxe head, simply combine the blueprint with your desired materials in a crafting grid."
+			dependencies: ["3FBB8A51378C2E32"]
+			id: "3CCF1450B5797B4C"
+			tasks: [{
+				id: "662E8AAA5C378AB8"
+				type: "item"
+				item: "silentgear:pickaxe_blueprint"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			subtitle: "Similar to tools and weapons, to make armor parts you need to combine the blueprint and materials in a crafting grid."
+			dependencies: ["1F4953DE81670392"]
+			id: "203341FFB453D096"
+			tasks: [{
+				id: "168C3192E8E0EAC2"
+				type: "item"
+				item: "silentgear:chestplate_blueprint"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			subtitle: "(Optional) Craft a lining to use with your armor."
+			dependencies: ["203341FFB453D096"]
+			id: "1878949E556F9A97"
+			tasks: [{
+				id: "72E2993ABB7118B9"
+				type: "item"
+				item: "silentgear:lining_blueprint"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			subtitle: "Coatings can be added to tools, weapons, and armor, improving their stats and adding traits."
+			dependencies: ["1F4953DE81670392"]
+			id: "4F4CDA2990A4082A"
+			tasks: [{
+				id: "3BE08A255D7EC7E5"
+				type: "item"
+				item: "silentgear:coating_blueprint"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.5d
+			subtitle: "Tip upgrades can be added to tools, and weapons to improve their stats and add traits."
+			dependencies: ["1F4953DE81670392"]
+			id: "7FC3D216CA4CA322"
+			tasks: [{
+				id: "3C920E1AF2C88DD4"
+				type: "item"
+				item: "silentgear:tip_blueprint"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.0d
+			subtitle: "Place items in the salvager to break them down to their raw materials."
+			dependencies: ["1F4953DE81670392"]
+			id: "09F9E88DF9EA0908"
+			tasks: [{
+				id: "64EF7F24E3893AFE"
+				type: "item"
+				item: "silentgear:salvager"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 1.5d
+			subtitle: "Materials are great, but they can be greater! Grade materials before building tools, weapons, and armor with them to imrpove their stats."
+			dependencies: [
+				"6936B818B7872D56"
+				"062E9547083550FC"
+				"2267496E622D5A7A"
+				"1F4953DE81670392"
+			]
+			id: "24C3738932A53428"
+			tasks: [{
+				id: "4E762BE587DCCA1C"
+				type: "item"
+				item: "silentgear:material_grader"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			subtitle: "Repair tools, weapons, and armor with repair kits. Upgrade repair kits to improve efficiency."
+			dependencies: ["1F4953DE81670392"]
+			id: "1AC10D9F3E93A9E1"
+			tasks: [{
+				id: "2A1FC1D0C28C3F7D"
+				type: "item"
+				item: {
+					id: "silentgear:very_crude_repair_kit"
+					Count: 1b
+					tag: {
+						Storage: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -14.0d
+			y: 3.0d
+			optional: true
+			id: "78B6DA07184ACD42"
+			tasks: [{
+				id: "4F5F5B41F0FD00CC"
+				type: "item"
+				item: "silentgear:netherwood_sapling"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 3.0d
+			dependencies: ["78B6DA07184ACD42"]
+			optional: true
+			id: "6B1262BAD5ACB6F4"
+			tasks: [{
+				id: "56B3D8E8778E9B25"
+				type: "item"
+				item: "silentgear:nether_banana"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 1.5d
+			optional: true
+			id: "2267496E622D5A7A"
+			tasks: [{
+				id: "182491A73C36C8B2"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 3.0d
+			dependencies: ["6B1262BAD5ACB6F4"]
+			optional: true
+			id: "062E9547083550FC"
+			tasks: [{
+				id: "7352C60F0F650F8A"
+				type: "item"
+				item: "silentgear:glittery_dust"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			optional: true
+			id: "6936B818B7872D56"
+			tasks: [{
+				id: "6C74CA157FD18B96"
+				type: "item"
+				item: "silentgear:blazing_dust"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Adventuring and finding items through loot chests and killing mobs will be critical to your sucess in Whimsyhell. Not only will you be rewarded with great loot, but you will also want to salvage items to obtain tiered crafting and forging materials."
+			id: "6D81AF9D401CE54B"
+			tasks: [{
+				id: "4D03D1F1032F7031"
+				type: "checkmark"
+				title: "Adventure and find loot!"
+			}]
+			rewards: [
+				{
+					id: "7DD0C26D346AC96B"
+					type: "item"
+					item: "silentgear:guide_book"
+				}
+				{
+					id: "5372663AF188D25C"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_book"
+						Count: 1b
+						tag: {
+							Inventory: { }
+						}
+					}
+				}
+				{
+					id: "67B925A5C1BE71A6"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "apotheosis:apoth_chronicle"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			subtitle: "Break down affix items into their respective forging materials."
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "3FC7D0D807EBF53A"
+			tasks: [{
+				id: "381ABAF93425E045"
+				type: "item"
+				item: "apotheosis:salvaging_table"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			subtitle: "Use the Reforging Table to add or change affixes on items, including sockets!"
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "4EFDBA5BE81D93BF"
+			tasks: [{
+				id: "3503A0547E8479B3"
+				type: "item"
+				item: "apotheosis:reforging_table"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			subtitle: "Obtain gem dust by dropping an anvil on any socketable gem."
+			dependencies: ["3655D173BAC3D975"]
+			id: "7C0FE83F25E131D2"
+			tasks: [{
+				id: "2802F2A6A644EFEE"
+				type: "item"
+				item: "apotheosis:gem_dust"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "0098E6BE2197CCF9"
+			tasks: [{
+				id: "72AD55BBE514827F"
+				type: "item"
+				item: "apotheosis:common_material"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "277BC22282198B0F"
+			tasks: [{
+				id: "092125108F8C1ABC"
+				type: "item"
+				item: "apotheosis:uncommon_material"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "6D53E84864C6DABC"
+			tasks: [{
+				id: "24A112A02A0CE3CD"
+				type: "item"
+				item: "apotheosis:rare_material"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "41C1C1766D24763E"
+			tasks: [{
+				id: "0F739F79D46B3BDA"
+				type: "item"
+				item: "apotheosis:epic_material"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "7CDFE88536810597"
+			tasks: [{
+				id: "5F7BB7B14701F440"
+				type: "item"
+				item: "apotheosis:mythic_material"
+			}]
+		}
+		{
+			title: "Silent Gear"
+			x: -7.0d
+			y: 0.0d
+			subtitle: "With Silent Gear you can craft very powerful custom weapons, armor, and tools by combining materials with blueprints in a crafting grid to create unique parts. Combine parts in a crafting grid to make the finished product. Supported materials have SGear stats on them, and you can mix materials to produce higher stat values. Explore mixing and matching materials, and don't forget to add enchantments, legendary stats and sockets through the reforging table to your custom items!"
+			id: "1F4953DE81670392"
+			tasks: [{
+				id: "42973C0346266B0B"
+				type: "item"
+				item: {
+					id: "silentgear:blueprint_book"
+					Count: 1b
+					tag: {
+						Inventory: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "7FBF7880B87546BF"
+				type: "item"
+				item: {
+					id: "silentgear:blueprint_package"
+					Count: 1b
+					tag: {
+						silentlib.LootContainer: {
+							LootTable: "silentgear:starter_blueprints"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "The Power of Affix Items and Socketing Gems!"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "You can forge/reforge affixes and add sockets on gear, including your custom Silent Gear items! You will need to find affix items and gems throughout the world, providing you with immense power!"
+			id: "3655D173BAC3D975"
+			tasks: [{
+				id: "5242AC905EE33508"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			subtitle: "Add sockets to items without reforging"
+			dependencies: ["3655D173BAC3D975"]
+			id: "22280367BBCC8603"
+			tasks: [{
+				id: "408A7CFE85562D21"
+				type: "item"
+				item: "apotheosis:sigil_of_socketing"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			subtitle: "Unsocket gems from items, destroying the gem in the process."
+			dependencies: ["22280367BBCC8603"]
+			id: "6F99A2A816615790"
+			tasks: [{
+				id: "257D2EFF65385A9B"
+				type: "item"
+				item: "apotheosis:vial_of_expulsion"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			subtitle: "Unsocket gems from items, destroying the item in the process."
+			dependencies: ["22280367BBCC8603"]
+			id: "0769510463824A9D"
+			tasks: [{
+				id: "2B2BCBDCAD9922E4"
+				type: "item"
+				item: "apotheosis:vial_of_extraction"
+			}]
+		}
+	]
+}

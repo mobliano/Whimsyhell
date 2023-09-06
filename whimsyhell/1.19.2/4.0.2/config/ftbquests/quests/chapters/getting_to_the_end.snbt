@@ -1,0 +1,238 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_to_the_end"
+	group: ""
+	icon: "minecraft:ender_eye"
+	id: "6877953CE36DABD1"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "047998828665C080"
+			size: 1.25d
+			subtitle: "To get to The End you must collect 12 unique eyes. These can be found throughout Whimsyhell. Throw any of the eyes to find The End Portal."
+			tasks: [{
+				advancement: "endrem:main/root"
+				criterion: ""
+				id: "6771C988FD1A4A55"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "3632A9F37BA1A7F4"
+			subtitle: "Witch Eye - Craft it using the witch pupil. This pupil is believed to have seen the ancient brewing recipes that were lost in time."
+			tasks: [{
+				advancement: "endrem:main/witch_eye"
+				criterion: ""
+				icon: {
+					Count: 1b
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4D17319E7FD1E1A0"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "4C637F670ACCFFBB"
+			subtitle: "Old Eye - Found in Desert Pyramids. Legends say this eye once belonged to one of the great Sandworms"
+			tasks: [{
+				advancement: "endrem:main/old_eye"
+				criterion: ""
+				id: "70AC45742628BB06"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "2082EFD60BAEC8E7"
+			subtitle: "Rogue Eye - Found in Jungle Pyramids. This eye is believed to have given our ancestors the knowledge of Redstone"
+			tasks: [{
+				advancement: "endrem:main/rogue_eye"
+				criterion: ""
+				id: "077C7B04ABEEDC20"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "3F15BA936208ED01"
+			subtitle: "Nether Eye - Found in Nether Fortresses. It was lost by a demon in the battle between the Aether and the Nether"
+			tasks: [{
+				advancement: "endrem:main/nether_eye"
+				criterion: ""
+				id: "62B5F7151D357958"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "468ADFBF27F2B3FC"
+			subtitle: "Cold Eye - Found in Igloos. One of the last artifacts left behind by the Iceologers before they all suddenly vanished from the world"
+			tasks: [{
+				advancement: "endrem:main/cold_eye"
+				criterion: ""
+				id: "2EAF7B882689C6D6"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "4DDE2F1CFA6A5B7C"
+			subtitle: "Corrupted Eye - Found in Pillager Outposts. The eye of a greedy king faded in solitude. Legend says it will bring infinite fortune to its owner"
+			tasks: [{
+				advancement: "endrem:main/corrupted_eye"
+				criterion: ""
+				id: "329549D30C701258"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "37A7A5B5BCF1FCB0"
+			subtitle: "Magical Eye - Dropped by Evokers. Without this eye, the Evoker has no power"
+			tasks: [{
+				advancement: "endrem:main/magical_eye"
+				criterion: ""
+				id: "3F5DE23EC9109C5E"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "713B52A6E3B01B61"
+			subtitle: "Black Eye - Found in Buried Chests. Pirates say it gave sight to the legendary Black Pearl"
+			tasks: [{
+				advancement: "endrem:main/black_eye"
+				criterion: ""
+				id: "43DA76B6A7598564"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			id: "61314F3C8F0D07BD"
+			subtitle: "Lost Eye - Found in Mineshafts. It is told that it was forged by the first blacksmiths of time"
+			tasks: [{
+				advancement: "endrem:main/lost_eye"
+				criterion: ""
+				id: "1C6312A8A2A618DE"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "3A319072B414856A"
+			subtitle: "Wither Eye - Dropped by The Wither. Has witnessed destruction. Maybe it also witnessed your stuff disappear"
+			tasks: [{
+				advancement: "endrem:main/wither_eye"
+				criterion: ""
+				id: "36B991893326062C"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "096EE08C5A3A4F36"
+			subtitle: "Guardian Eye - Get it by Killing Elder Guardian. It has seen many warriors drown into the depths of the sea"
+			tasks: [{
+				advancement: "endrem:main/guardian_eye"
+				criterion: ""
+				id: "5CBE1272D64220D5"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "618E47069A8B87D7"
+			subtitle: "Cursed Eye - Found in Bastions treasure chest. A powerful yet destructive artifact; the Piglins swore to protect it at the cost of their lives"
+			tasks: [{
+				advancement: "endrem:main/cursed_eye"
+				criterion: ""
+				id: "5A5CFD8148CD905F"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "5D947B80E23455E6"
+			subtitle: "Evil Eye - Buy it from a master cleric. A holy talisman said to protect its owner from bad luck"
+			tasks: [{
+				advancement: "endrem:main/evil_eye"
+				criterion: ""
+				id: "765A7456F853FE64"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "62EC2B657FB959A3"
+			subtitle: "Exotic Eye - Craft it using aquatic items. Those who followed this eye were never seen again; rumors say they found the great city of Atlantis, or lost their way trying"
+			tasks: [{
+				advancement: "endrem:main/exotic_eye"
+				criterion: ""
+				id: "5059E4AD0585064A"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			id: "2C8D46561C96E52F"
+			subtitle: "Undead Eye - Craft it using an Undead Soul. Remembrance of the past lives of those who live in death, especially the horses!"
+			tasks: [{
+				advancement: "endrem:main/undead_eye"
+				criterion: ""
+				id: "577A3DFC9B8C1837"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			id: "12A7FCDE8CD2E091"
+			subtitle: "Cryptic Eye - Have a small chance to get it when enchanting. We have no information about this eye..."
+			tasks: [{
+				advancement: "endrem:main/cryptic_eye"
+				criterion: ""
+				id: "07226128A4AED7AE"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			icon: "minecraft:map"
+			id: "4B85DBE9FB726787"
+			size: 1.25d
+			subtitle: "Trade with a master level Cleric to get a map to The Lost Castle"
+			tasks: [{
+				id: "07A24524A2D6FD98"
+				title: "The Lost Castle"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+	]
+	title: "Getting to The End"
+}

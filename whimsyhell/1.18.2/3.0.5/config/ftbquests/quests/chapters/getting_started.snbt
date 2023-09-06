@@ -1,0 +1,180 @@
+{
+	id: "52773EF811AA49E2"
+	group: ""
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:cobblestone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 0.0d
+			y: -7.0d
+			width: 10.0d
+			height: 10.0d
+			rotation: 0.0d
+			image: "packmenu:textures/gui/title.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.5d
+			y: -7.0d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "packmenu:textures/gui/logo.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "packmenu:textures/gui/logo.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Welcome to Whimsyhell!"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Welcome to Whimsyhell, an exciting world of not-so-peaceful creatures and painful consequences."
+			description: ["This section explains some of the basics to help you along your journey! Here, take a bandage to help heal faster."]
+			size: 1.25d
+			id: "7AE17935282AAAC0"
+			tasks: [{
+				id: "2B33D4B6350C6759"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "4F1997F906B23B9A"
+				type: "item"
+				item: "firstaid:bandage"
+			}]
+		}
+		{
+			title: "Waystones"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "You can find waystones throughout Whimsyhell. These will really help you get around the world."
+			id: "17716E10A21F71E9"
+			tasks: [{
+				id: "751ACE33E49CA653"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			subtitle: "These are no ordinary spawners! Check the JEI to see all the ways you can modify them to your liking. Spawners can be obtained using the Silk Touch enchantment."
+			id: "2DB4713047F5D2C7"
+			tasks: [{
+				id: "11C870A22041ABDF"
+				type: "item"
+				item: "minecraft:spawner"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			subtitle: "Sharestones are similar to Waystones, except they are visible to all players in the world. Setup unique Sharestone networks by color coding them!"
+			id: "6BAED1EF3B4467C6"
+			tasks: [{
+				id: "7962145D0BD0A577"
+				type: "item"
+				item: "waystones:sharestone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			subtitle: "You will notice villagers have been completely re-worked in Whimsyhell. Each villager has their own personality, race, gender, etc. Talk and get to know them!"
+			id: "64063C3A6426E8D0"
+			tasks: [{
+				id: "2A17229D5DC52E46"
+				type: "advancement"
+				advancement: "mca:root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Chose your own destiny!"
+			icon: "theabyss:anima_fire"
+			x: 2.0d
+			y: -1.5d
+			subtitle: "Like Villagers, you too can have your own personality, race, gender, etc. When you're ready, you can chose your destiny by clicking on this reward."
+			optional: true
+			id: "52A2351CC5A86D35"
+			tasks: [{
+				id: "5BECA9F5C4672B22"
+				type: "advancement"
+				advancement: "mca:root"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "4922F7223A00982D"
+				type: "command"
+				title: "Chose your destiny!"
+				icon: "theabyss:anima_fire"
+				command: "/mca destiny"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			subtitle: "When you're ready, you can use this blueprint to build and manage your village! Will you be a generous leader, or an oppressive overlord who imposes high taxes on their people?!? You decide!"
+			id: "3188208C1D07756C"
+			tasks: [{
+				id: "62D1E971B91627D3"
+				type: "advancement"
+				icon: "mca:blueprint"
+				advancement: "mca:root"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "300EB32FA8A77F41"
+				type: "item"
+				item: "mca:blueprint"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			subtitle: "If you want to sleep without reseting your spawn, use a sleeping bag!"
+			id: "14E08E98F4E36CAA"
+			tasks: [{
+				id: "7664A70831A99FB0"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
+			}]
+		}
+		{
+			icon: "minecraft:white_bed"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "You will have dreams (or nightmares) the first two times you sleep. These are a hint of what's to come after you defeat The End! See The Abyss quest for more detail."
+			id: "0C604BD246BC0511"
+			tasks: [{
+				id: "348E59EF002C802D"
+				type: "checkmark"
+				title: "Dreams or Nightmares?"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

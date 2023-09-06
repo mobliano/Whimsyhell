@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "#whimsyhell:lightning_dragon_biomes",
+        "#forge:is_underground",
+        "terralith:cave/deep_caves",
+        "terralith:cave/crystal_caves",
+        "terralith:cave/underground_jungle",
+        "terralith:cave/thermal_caves",
+        "terralith:cave/fungal_caves",
+        "terralith:cave/diorite_caves",
+        "terralith:cave/andesite_caves"
+    ]
+}

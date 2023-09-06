@@ -1,0 +1,118 @@
+{
+	id: "03786CDBB9E9643E"
+	group: ""
+	order_index: 9
+	filename: "dragons"
+	title: "Dragons"
+	icon: "minecraft:dragon_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -0.5d
+			subtitle: "Congrats on obtaining a dragon egg! To hatch the egg you will need level 20 agility and level 15 farming."
+			description: ["You can now hatch your own dragon mount to help you with your adventures. The type of dragon you hatch will depend on the environment you chose to place the egg. When you have found the perfect spot, place the egg and right click it to start the hatching process. Once hatched, feed it lots of fish so that it loves you. If your dragon takes damage, feed it beef and it will heal right up! Good luck, I'm sure you will make a great Mother/Father of Dragons!"]
+			id: "0892FAA8D62F161C"
+			tasks: [{
+				id: "79774B061B0EC812"
+				type: "item"
+				item: {
+					id: "dragonmounts:dragon_egg"
+					Count: 1b
+					tag: {
+						ItemName: "dragon_breed.dragonmounts.forest"
+						BlockEntityTag: {
+							HatchTime: 12000
+							Breed: "dragonmounts:forest"
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "15731CAA5741B9ED"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+				{
+					id: "3600F8727626C3F6"
+					type: "item"
+					item: "minecraft:tropical_fish"
+					count: 64
+				}
+				{
+					id: "28759191049F65F5"
+					type: "item"
+					item: "minecraft:beef"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			description: ["So you have XP but no Dragon? You came to the right place!"]
+			dependencies: [
+				"594D2E521B182721"
+				"1DDECF40201A2FD0"
+			]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "2A7EC0B475A6F10C"
+			tasks: [{
+				id: "2F8A93EACCFF6B73"
+				type: "xp"
+				value: 100L
+				points: false
+			}]
+			rewards: [{
+				id: "584E1C430E683B4F"
+				type: "item"
+				item: {
+					id: "dragonmounts:dragon_egg"
+					Count: 1b
+					tag: {
+						ItemName: "dragon_breed.dragonmounts.forest"
+						BlockEntityTag: {
+							HatchTime: 12000
+							Breed: "dragonmounts:forest"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.5d
+			description: ["A great way to collect XP"]
+			optional: true
+			id: "1DDECF40201A2FD0"
+			tasks: [{
+				id: "3B82EB5CA2113044"
+				type: "item"
+				item: {
+					id: "thermal:xp_crystal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			description: ["A great way to collect XP"]
+			optional: true
+			id: "594D2E521B182721"
+			tasks: [{
+				id: "009B8988B55AB993"
+				type: "item"
+				item: {
+					id: "xpbook:xp_tome"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

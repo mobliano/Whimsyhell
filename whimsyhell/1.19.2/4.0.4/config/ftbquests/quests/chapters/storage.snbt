@@ -1,0 +1,442 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: ""
+	icon: "quark:oak_chest"
+	id: "7A19F55F2B5932B6"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6A6F9757A272E62B"
+			rewards: [{
+				id: "1768053AEF0B4999"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "The classic chest. Never goes out of style.. or does it???"
+			tasks: [{
+				id: "5985912A90082471"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			id: "767E66B928C2D26A"
+			size: 1.25d
+			tasks: [{
+				id: "04A5F0CA284D385E"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["767E66B928C2D26A"]
+			id: "352C41145721AF63"
+			tasks: [{
+				id: "536D4D272BABDCD2"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["767E66B928C2D26A"]
+			id: "0656B0C1BD38AA9D"
+			tasks: [{
+				id: "7051786857D5336F"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["767E66B928C2D26A"]
+			id: "048C569F289E02A0"
+			tasks: [{
+				id: "2DD11D65B3A337C9"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["048C569F289E02A0"]
+			id: "2C35A097142D157E"
+			tasks: [{
+				id: "43E4F1CA928B38BE"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2C35A097142D157E"]
+			id: "1A85D845E2FB1683"
+			tasks: [{
+				id: "0F3128645E264303"
+				item: "refinedstorage:importer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1A85D845E2FB1683"]
+			id: "12964761279B277E"
+			tasks: [{
+				id: "152D25BDD36988E6"
+				item: "refinedstorage:exporter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["352C41145721AF63"]
+			id: "07A1BC543A0CBEB1"
+			tasks: [{
+				id: "43275579DF25AA86"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07A1BC543A0CBEB1"]
+			id: "0E6D451A861204CE"
+			tasks: [{
+				id: "3B198CBE21CFB3F2"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0E6D451A861204CE"]
+			id: "47C6FD16E497B846"
+			tasks: [{
+				id: "4EBB3459C54006A1"
+				item: "refinedstorage:16k_storage_part"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["47C6FD16E497B846"]
+			id: "62EAC677E7770468"
+			tasks: [{
+				id: "16D5047E1BF340DF"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62EAC677E7770468"]
+			id: "516E70146722E7D9"
+			tasks: [{
+				id: "0F99299F8B6F909B"
+				item: "rebornstorage:small_item_disk_part"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["516E70146722E7D9"]
+			id: "6B23977A3C85038B"
+			tasks: [{
+				id: "07CA83669868BFDB"
+				item: "rebornstorage:medium_item_disk_part"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B23977A3C85038B"]
+			id: "0BD9FEC0841966E5"
+			tasks: [{
+				id: "59B0EB2A11EEE8BA"
+				item: "rebornstorage:large_item_disk_part"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BD9FEC0841966E5"]
+			id: "378F97D09B9D8435"
+			tasks: [{
+				id: "79ACF155A5985622"
+				item: "rebornstorage:larger_item_disk_part"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["352C41145721AF63"]
+			id: "2F11A50FA1CBFFAC"
+			tasks: [{
+				id: "5CDFDCAD7199B631"
+				item: "refinedstorage:64k_fluid_storage_part"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F11A50FA1CBFFAC"]
+			id: "6F5F41B77E0BB369"
+			tasks: [{
+				id: "27A859B179A01BCF"
+				item: "refinedstorage:256k_fluid_storage_part"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6F5F41B77E0BB369"]
+			id: "6D46CE62EF6A38DB"
+			tasks: [{
+				id: "5543D3F27CC6DAA3"
+				item: "refinedstorage:1024k_fluid_storage_part"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6D46CE62EF6A38DB"]
+			id: "23D9C04191380FFB"
+			tasks: [{
+				id: "0FF1081F47CA6421"
+				item: "refinedstorage:4096k_fluid_storage_part"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["23D9C04191380FFB"]
+			id: "279DCC38ED1C939F"
+			tasks: [{
+				id: "6E2275E61320DE82"
+				item: "rebornstorage:small_fluid_disk_part"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["279DCC38ED1C939F"]
+			id: "7A597D4C1DDF835A"
+			tasks: [{
+				id: "0A4006A93A50D7AB"
+				item: "rebornstorage:medium_fluid_disk_part"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A597D4C1DDF835A"]
+			id: "7F27ECF48F4435A1"
+			tasks: [{
+				id: "06598E5A28F0E077"
+				item: "rebornstorage:large_fluid_disk_part"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F27ECF48F4435A1"]
+			id: "7A31D030FA137E0B"
+			tasks: [{
+				id: "0EE183F3B3FEBA75"
+				item: "rebornstorage:larger_fluid_disk_part"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0656B0C1BD38AA9D"]
+			id: "60A0767FD968F989"
+			tasks: [{
+				id: "777BA7C31147BD12"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["60A0767FD968F989"]
+			id: "4A7F2DA50DB798BD"
+			tasks: [{
+				id: "2844A15058AD9E99"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4A7F2DA50DB798BD"]
+			id: "25AEE3A67C5DEECB"
+			tasks: [{
+				id: "2E2AF1C9521B3B11"
+				item: "refinedstorage:crafter_manager"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["25AEE3A67C5DEECB"]
+			id: "76D2F73B3615EDCE"
+			tasks: [{
+				id: "568E08FF324C4063"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			id: "080174A08A2C9B81"
+			subtitle: "Chests are great, but these are even better! Don't forget to upgrade!"
+			tasks: [{
+				id: "63B0B8AD518C0A69"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -12.0d
+		}
+		{
+			id: "60A52880731C2426"
+			subtitle: "Make chests and barrels available to Refined Storage through this controller"
+			tasks: [{
+				id: "325C10623204B726"
+				item: "sophisticatedstorage:controller"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			id: "6A9E50028C7DD929"
+			subtitle: "Use this tool to link chests and barrels to a storage controller"
+			tasks: [{
+				id: "57E596AF50DFC832"
+				item: "sophisticatedstorage:storage_tool"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -9.0d
+		}
+		{
+			id: "50E87228B424BFCA"
+			subtitle: "Great storage on the go! Bring a backpack on your adventures. Don't forget to upgrade!"
+			tasks: [{
+				id: "24E3B508274BD46A"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -13.5d
+		}
+		{
+			id: "0764CDBCC80F1C45"
+			subtitle: "Barrels are great, but these are even better! Don't forget to upgrade!"
+			tasks: [{
+				id: "2201806B4C273187"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:iron_barrel"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["767E66B928C2D26A"]
+			id: "5F20B0696F69E559"
+			tasks: [{
+				id: "69743D74D969FC33"
+				item: "refinedstorage:wireless_transmitter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5F20B0696F69E559"]
+			id: "412666E867A865E5"
+			tasks: [{
+				id: "7D053512A9371DC9"
+				item: "refinedstorage:wireless_grid"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["412666E867A865E5"]
+			id: "548EEC772A1FCCAE"
+			tasks: [{
+				id: "07BFCB1C27DD38D1"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["548EEC772A1FCCAE"]
+			id: "281642B139FE78EF"
+			tasks: [{
+				id: "610C8FA65E55D2BB"
+				item: {
+					Count: 1b
+					id: "rebornstorage:super_wireless_crafting_grid"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.5d
+		}
+	]
+	title: "Storage"
+}

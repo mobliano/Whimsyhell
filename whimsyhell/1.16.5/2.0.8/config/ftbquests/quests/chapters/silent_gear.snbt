@@ -1,0 +1,236 @@
+{
+	id: "729ACD006E733691"
+	group: ""
+	order_index: 1
+	filename: "silent_gear"
+	title: "Silent Gear"
+	icon: "silentgear:pickaxe_blueprint"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: 0.5d
+			subtitle: "To craft tools, weapons, and armor, you will need to combine materials with blueprints. Supported materials will have SGear stats on them. Explore mixing and matching materials to make some awesome items!"
+			id: "5E4CEE715589D9D1"
+			tasks: [{
+				id: "542AB3E598906E39"
+				type: "checkmark"
+				title: "Silent Gear"
+			}]
+			rewards: [{
+				id: "3BF0F23687098877"
+				type: "item"
+				item: {
+					id: "silentgear:blueprint_package"
+					Count: 1b
+					tag: {
+						silentlib.LootContainer: {
+							LootTable: "silentgear:starter_blueprints"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "To make a tool rod, simply combine the blueprint with your desired materials in a crafting grid."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "3FBB8A51378C2E32"
+			tasks: [{
+				id: "6ED44E26F1C77536"
+				type: "item"
+				item: "silentgear:rod_blueprint"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			subtitle: "To make a pickaxe head, simply combine the blueprint with your desired materials in a crafting grid."
+			dependencies: ["3FBB8A51378C2E32"]
+			id: "3CCF1450B5797B4C"
+			tasks: [{
+				id: "662E8AAA5C378AB8"
+				type: "item"
+				item: "silentgear:pickaxe_blueprint"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			subtitle: "Similar to tools and weapons, to make armor parts you need to combine the blueprint and materials in a crafting grid."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "203341FFB453D096"
+			tasks: [{
+				id: "168C3192E8E0EAC2"
+				type: "item"
+				item: "silentgear:chestplate_blueprint"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			subtitle: "(Optional) Craft a lining to use with your armor."
+			dependencies: ["203341FFB453D096"]
+			id: "1878949E556F9A97"
+			tasks: [{
+				id: "72E2993ABB7118B9"
+				type: "item"
+				item: "silentgear:lining_blueprint"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			subtitle: "Coatings can be added to tools, weapons, and armor, improving their stats and adding traits."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "4F4CDA2990A4082A"
+			tasks: [{
+				id: "3BE08A255D7EC7E5"
+				type: "item"
+				item: "silentgear:coating_blueprint"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			subtitle: "Tip upgrades can be added to tools, and weapons to improve their stats and add traits."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "7FC3D216CA4CA322"
+			tasks: [{
+				id: "3C920E1AF2C88DD4"
+				type: "item"
+				item: "silentgear:tip_blueprint"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			subtitle: "Place items in the salvager to break them down to their raw materials."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "09F9E88DF9EA0908"
+			tasks: [{
+				id: "64EF7F24E3893AFE"
+				type: "item"
+				item: "silentgear:salvager"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			subtitle: "Materials are great, but they can be greater! Grade materials before building tools, weapons, and armor with them to imrpove their stats."
+			dependencies: [
+				"5E4CEE715589D9D1"
+				"6936B818B7872D56"
+				"062E9547083550FC"
+				"2267496E622D5A7A"
+			]
+			optional: true
+			id: "24C3738932A53428"
+			tasks: [{
+				id: "4E762BE587DCCA1C"
+				type: "item"
+				item: "silentgear:material_grader"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			subtitle: "Repair tools, weapons, and armor with repair kits. Upgrade repair kits to improve efficiency."
+			dependencies: ["5E4CEE715589D9D1"]
+			id: "1AC10D9F3E93A9E1"
+			tasks: [{
+				id: "2A1FC1D0C28C3F7D"
+				type: "item"
+				item: {
+					id: "silentgear:very_crude_repair_kit"
+					Count: 1b
+					tag: {
+						Storage: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			subtitle: "My what powerful items you have!"
+			id: "2B52F9287A8E48E1"
+			tasks: [{
+				id: "0831438E3789839C"
+				type: "item"
+				item: "silentgems:token_enchanter"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			subtitle: "This looks like a good mixing material!"
+			dependencies: ["2B52F9287A8E48E1"]
+			id: "7D870D8A4562090F"
+			tasks: [{
+				id: "41B74B940B163F29"
+				type: "item"
+				item: "silentgems:magma_cream_crystal"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 3.5d
+			optional: true
+			id: "78B6DA07184ACD42"
+			tasks: [{
+				id: "4F5F5B41F0FD00CC"
+				type: "item"
+				item: "silentgear:netherwood_sapling"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 3.5d
+			dependencies: ["78B6DA07184ACD42"]
+			optional: true
+			id: "6B1262BAD5ACB6F4"
+			tasks: [{
+				id: "56B3D8E8778E9B25"
+				type: "item"
+				item: "silentgear:nether_banana"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.0d
+			optional: true
+			id: "2267496E622D5A7A"
+			tasks: [{
+				id: "182491A73C36C8B2"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 3.5d
+			dependencies: ["6B1262BAD5ACB6F4"]
+			optional: true
+			id: "062E9547083550FC"
+			tasks: [{
+				id: "7352C60F0F650F8A"
+				type: "item"
+				item: "silentgear:glittery_dust"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.0d
+			optional: true
+			id: "6936B818B7872D56"
+			tasks: [{
+				id: "6C74CA157FD18B96"
+				type: "item"
+				item: "silentgear:blazing_dust"
+			}]
+		}
+	]
+}

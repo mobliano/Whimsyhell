@@ -1,0 +1,170 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forbidden_and_arcanus"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "forbidden_arcanus:eternal_stella"
+		tag: { }
+	}
+	id: "2777A3882231EDDF"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 9.0d
+			hover: [ ]
+			image: "whimsyhell:textures/gui/hf.png"
+			rotation: 0.0d
+			width: 16.0d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 9.0d
+			hover: [ ]
+			image: "whimsyhell:textures/gui/aco.png"
+			rotation: 0.0d
+			width: 16.0d
+			x: 0.0d
+			y: 16.0d
+		}
+	]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "633D87E627F3793A"
+			subtitle: "That's right! By leveraging the Forbidden and Arcanus mod, echantments can be forged magically, including a way to make your gear and items indestructible using Eternal Stella!"
+			tasks: [{
+				id: "2B4E1F3737DFA2B1"
+				title: "Enchantment Forging!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"You will need 45 Polished Darkstone, 9 Arcane Chiseled Polished Darkstone, 4 Chiseled Arcane Polished Darkstone and a Smithing Table."
+				" "
+				"Place the Smithing Table in the center and use a Mundabitur Dust on it by sneaking + right clicking and this create the Hephaestus Forge."
+				" "
+				"To start a ritual you need to right-click on the Hephaestus Forge block with a Blacksmith Gavel."
+			]
+			id: "0A96A030F82ACB9D"
+			subtitle: "To get the Hephaestus Forge, you must build a multiblock structure."
+			tasks: [{
+				id: "64996E1DFE7E0B8C"
+				item: "forbidden_arcanus:hephaestus_forge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "138DA2B46D8C0807"
+			tasks: [{
+				id: "30D6786B0593A273"
+				item: "forbidden_arcanus:test_tube"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			id: "2AD126DE4CD55091"
+			subtitle: "Use a Mystical Dagger to kill mobs while having a test tube in your inventory to collect blood for the forge."
+			tasks: [{
+				id: "3CF732FDB280EDD9"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:mystical_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			id: "7BCF4B5DA76D9188"
+			subtitle: "Used to create the Hephaestus Forge"
+			tasks: [{
+				id: "26DA60F82F07BB4E"
+				item: "forbidden_arcanus:mundabitur_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "7C8950FCC41636AE"
+			subtitle: "Used to activate rituals with the Hephaestus Forge. You can make higher tier gavels to support more rituals."
+			tasks: [{
+				id: "5FD4FB807BD9D2C5"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:wooden_blacksmith_gavel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			id: "789EFEA539B765CB"
+			subtitle: "Used to power the Hephaestus Forge."
+			tasks: [{
+				id: "76C919730DFBB8C3"
+				item: "forbidden_arcanus:aureal_bottle"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			id: "543A467601238B07"
+			subtitle: "Can be used to repair all equiped items, or used to make items eternal using a smithing table."
+			tasks: [{
+				id: "3673D78903341F0B"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			id: "5D07E329459233B6"
+			subtitle: "Use this against soul sand to extract souls for use by the Hephaestus Forge"
+			tasks: [{
+				id: "0ECCA51A893FA419"
+				item: {
+					Count: 1b
+					id: "forbidden_arcanus:soul_extractor"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+	]
+	title: "Forbidden and Arcanus"
+}

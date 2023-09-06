@@ -1,0 +1,154 @@
+{
+	id: "44088A6119C081EE"
+	group: ""
+	order_index: 8
+	filename: "minecolonies"
+	title: "MineColonies"
+	icon: "minecolonies:blockhutbuilder"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -2.5d
+			subtitle: "Build your kingdom!"
+			id: "3497D5162451FCBD"
+			tasks: [{
+				id: "44F86479FCE51AA3"
+				type: "item"
+				item: "structurize:sceptergold"
+			}]
+			rewards: [
+				{
+					id: "036F907A13A8F40B"
+					type: "item"
+					item: "minecolonies:blockhuttownhall"
+				}
+				{
+					id: "496338B1D00A4F31"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["3497D5162451FCBD"]
+			id: "5F6379E1F5CDDF52"
+			tasks: [{
+				id: "3569750FBA5B6861"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/start_builder"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "1BE26AE261E29B32"
+					type: "choice"
+					table_id: 2451724520250416970L
+				}
+				{
+					id: "4EEE5B94664CF937"
+					type: "item"
+					item: "minecraft:torch"
+					count: 32
+				}
+				{
+					id: "61091F26B7BD393E"
+					type: "item"
+					item: "torchmaster:megatorch"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["5F6379E1F5CDDF52"]
+			id: "56F6852FF9535FE0"
+			tasks: [{
+				id: "542671438270BCE4"
+				type: "item"
+				item: "minecolonies:blockhuttavern"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["5F6379E1F5CDDF52"]
+			id: "11F40C47AD0D3E5C"
+			tasks: [{
+				id: "44C4E9B22A967313"
+				type: "item"
+				item: "minecolonies:blockhutguardtower"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["5F6379E1F5CDDF52"]
+			id: "506158DC67C168F1"
+			tasks: [{
+				id: "4C335E914CA3540B"
+				type: "item"
+				item: "minecolonies:blockhutcitizen"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["56F6852FF9535FE0"]
+			id: "3695055A81916C99"
+			tasks: [{
+				id: "0D9E087DE980E349"
+				type: "item"
+				item: "minecolonies:blockhutcook"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			dependencies: ["56F6852FF9535FE0"]
+			id: "00D74DCBA070B1BC"
+			tasks: [{
+				id: "3F3127AB74607FC9"
+				type: "item"
+				item: "minecolonies:blockhutuniversity"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["56F6852FF9535FE0"]
+			id: "50A475A6FAC07F99"
+			tasks: [{
+				id: "273633809905422F"
+				type: "item"
+				item: "minecolonies:blockhutminer"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["506158DC67C168F1"]
+			id: "691B16E2664CF867"
+			tasks: [{
+				id: "047131657FE077E0"
+				type: "item"
+				item: "minecolonies:blockhutwarehouse"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			dependencies: ["11F40C47AD0D3E5C"]
+			id: "4EA12020A6DD349B"
+			tasks: [{
+				id: "6DE33F24ADEB79F4"
+				type: "item"
+				item: "minecolonies:blockhutlumberjack"
+			}]
+		}
+	]
+}

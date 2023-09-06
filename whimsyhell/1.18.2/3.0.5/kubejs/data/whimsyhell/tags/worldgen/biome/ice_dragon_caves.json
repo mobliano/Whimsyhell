@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#whimsyhell:ice_dragon_biomes",
+        "terralith:cave/frostfire_caves",
+        "terralith:cave/ice_caves"
+    ]
+}
