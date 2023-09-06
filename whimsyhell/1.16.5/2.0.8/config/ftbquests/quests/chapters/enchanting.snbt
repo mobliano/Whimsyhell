@@ -1,0 +1,162 @@
+{
+	id: "340FB49FF9DFC7D0"
+	group: ""
+	order_index: 5
+	filename: "enchanting"
+	title: "Enchanting"
+	icon: {
+		id: "minecraft:enchanted_book"
+		Count: 1b
+		tag: {
+			StoredEnchantments: [{
+				lvl: 1s
+				id: "minecraft:protection"
+			}]
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "09782838C8FC2C56"
+			tasks: [{
+				id: "744C11C1FFFBA948"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Powering an enchanting table with a bookshelves is nice, but is there something better???"
+			id: "5F3C7A6B42C30CA7"
+			tasks: [{
+				id: "48DFAAA9B95A8D11"
+				type: "item"
+				item: "minecraft:bookshelf"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			subtitle: "Oooh what's this?"
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "22F910165AADECA6"
+			tasks: [{
+				id: "30E26800F711E940"
+				type: "item"
+				item: "apotheosis:glowing_hellshelf"
+			}]
+			rewards: [{
+				id: "75E6BD04AB390383"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			subtitle: "Oh my arcana!"
+			dependencies: ["22F910165AADECA6"]
+			id: "3267AAB26A26C329"
+			tasks: [{
+				id: "5835D8C74D0DB554"
+				type: "item"
+				item: "apotheosis:heart_seashelf"
+			}]
+			rewards: [{
+				id: "22B25E1CE07DAB0B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			subtitle: "Wow! Such stats!"
+			dependencies: ["3267AAB26A26C329"]
+			id: "481D6AB2678B0F08"
+			tasks: [{
+				id: "50F1030AED4AF5EB"
+				type: "item"
+				item: "apotheosis:pearl_endshelf"
+			}]
+			rewards: [{
+				id: "35F98BD2A3F90872"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			subtitle: "Candles are nice."
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "6119C99FFA03DFFB"
+			tasks: [{
+				id: "303F25C121E898CC"
+				type: "item"
+				item: "quark:white_candle"
+			}]
+			rewards: [{
+				id: "274C57C4D15DD855"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Not only can you take enchantments off gear, you can put them into books!"
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "04CFDF0C7EBA73C9"
+			tasks: [{
+				id: "38D93B425846C164"
+				type: "item"
+				item: "minecraft:grindstone"
+			}]
+			rewards: [{
+				id: "2DF65CDE16606589"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			subtitle: "The library of a true enchanter! Place echanted books in this library for safe keeping and the ability to dynamically create new enchanted books with the level of your liking."
+			dependencies: ["1A78E5D64C9E3FAB"]
+			id: "2629F1F92B53B892"
+			tasks: [{
+				id: "0A7A9098976BEB7D"
+				type: "item"
+				item: "apotheosis:enchantment_library"
+			}]
+			rewards: [{
+				id: "5ADCE82970D8D1C9"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			subtitle: "The classic anvil. Perfect for putting enchantments on gear."
+			dependencies: ["04CFDF0C7EBA73C9"]
+			id: "1A78E5D64C9E3FAB"
+			tasks: [{
+				id: "4CC6724A1F7A0F95"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+			rewards: [{
+				id: "4DBD499AFA81B9BE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

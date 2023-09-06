@@ -1,0 +1,126 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_end"
+	group: ""
+	icon: "endrem:ancient_portal_frame"
+	id: "50EEC609E833AB5F"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "endrem:ancient_portal_frame"
+			id: "4D36AAFE17F5CD9C"
+			tasks: [{
+				advancement: "minecraft:end/root"
+				criterion: ""
+				id: "754261531CF70B11"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D36AAFE17F5CD9C"]
+			icon: "minecraft:dragon_head"
+			id: "2A51F2BA00FCA9DF"
+			rewards: [{
+				id: "6896AF53459CBC64"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "412B85684482E982"
+				title: "Kill The Ender Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A3378F1077CEBF8"]
+			id: "1839FE2EA7937C34"
+			rewards: [
+				{
+					id: "43800813058D8DDB"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "08DEDC4BF680114A"
+					item: "create:creative_blaze_cake"
+					type: "item"
+				}
+				{
+					count: 14
+					id: "1CCB46CCC54B942B"
+					item: "theabyss:unstable_obsidian"
+					type: "item"
+				}
+				{
+					id: "2995188E450A8440"
+					item: {
+						Count: 1b
+						id: "theabyss:the_abyss"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Capsid and Mosquito Crimson Lava can create the Void Worm"
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: "alexsmobs:void_worm_eye"
+				id: "3D9577E7AC16A0C6"
+				title: "Summon and Kill The Void Worm"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A51F2BA00FCA9DF"]
+			id: "2A991A7A07F48137"
+			rewards: [{
+				id: "7E62881A704D97D8"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				icon: "cataclysm:void_core"
+				id: "717EFC6BD2CDE31C"
+				title: "Kill a Ender Golem"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A991A7A07F48137"]
+			id: "0A3378F1077CEBF8"
+			rewards: [{
+				id: "5F9EA404362555F6"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: "theabyss:ender_crystal_shard"
+				id: "7DF7335446AA6AAF"
+				title: "Kill the Ender Guardian"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+	]
+	title: "The End"
+}

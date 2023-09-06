@@ -1,0 +1,204 @@
+{
+	id: "340FB49FF9DFC7D0"
+	group: ""
+	order_index: 5
+	filename: "enchanting"
+	title: "Enchanting"
+	icon: {
+		id: "minecraft:enchanted_book"
+		Count: 1b
+		tag: {
+			StoredEnchantments: [{
+				lvl: 1s
+				id: "minecraft:protection"
+			}]
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "09782838C8FC2C56"
+			tasks: [{
+				id: "744C11C1FFFBA948"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Powering an enchanting table with a bookshelves is nice, but is there something better???"
+			id: "5F3C7A6B42C30CA7"
+			tasks: [{
+				id: "48DFAAA9B95A8D11"
+				type: "item"
+				item: "minecraft:bookshelf"
+			}]
+			rewards: [{
+				id: "1713224CA173F93A"
+				type: "item"
+				item: {
+					id: "xpbook:xp_tome"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			subtitle: "Oooh what's this?"
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "22F910165AADECA6"
+			tasks: [{
+				id: "30E26800F711E940"
+				type: "item"
+				item: "apotheosis:glowing_hellshelf"
+			}]
+			rewards: [{
+				id: "75E6BD04AB390383"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			subtitle: "Oh my arcana!"
+			dependencies: ["22F910165AADECA6"]
+			id: "3267AAB26A26C329"
+			tasks: [{
+				id: "5835D8C74D0DB554"
+				type: "item"
+				item: "apotheosis:heart_seashelf"
+			}]
+			rewards: [{
+				id: "22B25E1CE07DAB0B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			subtitle: "Wow! Such stats!"
+			dependencies: ["3267AAB26A26C329"]
+			id: "481D6AB2678B0F08"
+			tasks: [{
+				id: "50F1030AED4AF5EB"
+				type: "item"
+				item: "apotheosis:pearl_endshelf"
+			}]
+			rewards: [{
+				id: "35F98BD2A3F90872"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Not only can you take enchantments off gear, you can put them into books!"
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "04CFDF0C7EBA73C9"
+			tasks: [{
+				id: "38D93B425846C164"
+				type: "item"
+				item: "minecraft:grindstone"
+			}]
+			rewards: [{
+				id: "2DF65CDE16606589"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			subtitle: "The classic anvil. Perfect for putting enchantments on gear."
+			dependencies: ["04CFDF0C7EBA73C9"]
+			id: "1A78E5D64C9E3FAB"
+			tasks: [{
+				id: "4CC6724A1F7A0F95"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+			rewards: [{
+				id: "4DBD499AFA81B9BE"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			subtitle: "The Enchantment Library can store all of your enchanments, and allows you to control the level of each enchantment you pull out. Put enchaments into the library using enchanted books."
+			dependencies: ["5BCC3625C4A215AC"]
+			id: "379424FBBAF22B2F"
+			tasks: [{
+				id: "2A70AC23A08B6AA8"
+				type: "item"
+				item: "apotheosis:library"
+			}]
+			rewards: [
+				{
+					id: "3A5ADF79F0D09A3C"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "18A74E1E4123E892"
+					type: "item"
+					item: {
+						id: "dragonmounts:dragon_egg"
+						Count: 1b
+						tag: {
+							ItemName: "dragon_breed.dragonmounts.forest"
+							BlockEntityTag: {
+								HatchTime: 12000
+								Breed: "dragonmounts:forest"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "5BCC3625C4A215AC"
+			tasks: [{
+				id: "1E76DCB4B78A7101"
+				type: "item"
+				item: "apotheosis:infused_hellshelf"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			dependencies: ["5BCC3625C4A215AC"]
+			id: "326AC538D793A124"
+			tasks: [{
+				id: "011BAB36BB8C8ECD"
+				type: "item"
+				item: "apotheosis:infused_seashelf"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			dependencies: ["379424FBBAF22B2F"]
+			id: "65BDD4E79FDD6D7C"
+			tasks: [{
+				id: "3F756B9D9C847CBD"
+				type: "item"
+				item: "apotheosis:ender_library"
+			}]
+		}
+	]
+}

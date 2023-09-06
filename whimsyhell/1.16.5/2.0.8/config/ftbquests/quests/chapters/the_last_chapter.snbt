@@ -1,0 +1,198 @@
+{
+	id: "53FAF0A851398EA6"
+	group: ""
+	order_index: 13
+	filename: "the_last_chapter"
+	title: "The Abyss"
+	icon: {
+		id: "patchouli:guide_book"
+		Count: 1b
+		tag: {
+			"patchouli:book": "theabyss:abyssbookitem"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.5d
+			y: -0.5d
+			subtitle: "Good luck!"
+			id: "42CDDCDE36FD0351"
+			tasks: [{
+				id: "163E6695206A258E"
+				type: "dimension"
+				title: "Enter The Abyss"
+				icon: "theabyss:unstable_obsidian"
+				dimension: "theabyss:the_abyss"
+			}]
+			rewards: [{
+				id: "082C6C963D58BA8C"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "7A7BC9ED0BE5D709"
+			tasks: [{
+				id: "66F13D8BD1F9E7D1"
+				type: "kill"
+				icon: "theabyss:elder_eye"
+				entity: "theabyss:elder"
+				value: 1L
+			}]
+			rewards: [{
+				id: "191FB7C4546646AF"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "0040EE8193E308E6"
+			tasks: [{
+				id: "5BB17E8BF77B2860"
+				type: "kill"
+				icon: "theabyss:magician_spawn_egg"
+				entity: "theabyss:magician"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2A6AA25CB88C87D2"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "2D4662A47AF18D0B"
+			tasks: [{
+				id: "712E7AD054C2C639"
+				type: "kill"
+				icon: "theabyss:crystal_hand"
+				entity: "theabyss:crystal_golem"
+				value: 1L
+			}]
+			rewards: [{
+				id: "03FA27A70F78E855"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "To summon Nightblade all the Brick Stone Pillars in the Nightblade Summoning Structure needs to be lit up. It can be lit up using Soul Heart. Once all Brick Stone Pillars are lit you must place Eye Of Abyss on the Night Altar. Once the Eye Of Abyss is placed lightning will strike the Night Altar and Nightblade would be summoned."
+			dependencies: [
+				"1F3C8FCDE10603CC"
+				"7A7BC9ED0BE5D709"
+				"2D4662A47AF18D0B"
+				"0040EE8193E308E6"
+				"3096B5DE750051B1"
+			]
+			id: "1630DBFF8B6A6AED"
+			tasks: [{
+				id: "287761444F6DA85C"
+				type: "kill"
+				entity: "theabyss:night_blade_boss_clone"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "22F6454CF2DEC07D"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					id: "235E67B4E038FD3D"
+					type: "item"
+					item: "kubejs:whimsy_ingot"
+					count: 16
+				}
+				{
+					id: "2D94E904D5F32803"
+					type: "item"
+					item: "kubejs:whimsy_plate"
+					count: 16
+				}
+				{
+					id: "329354E910B27208"
+					type: "item"
+					item: "create:creative_motor"
+				}
+				{
+					id: "1F98400A2F308C34"
+					type: "item"
+					item: "create:handheld_worldshaper"
+				}
+				{
+					id: "4E4D3046E623C1E4"
+					type: "item"
+					item: "ars_nouveau:creative_spell_book"
+				}
+				{
+					id: "2231C9E45DCC7A44"
+					type: "item"
+					item: {
+						id: "theabyss:ring_of_ghosts"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7DB1A32970CB8E4A"
+					type: "item"
+					item: "mekanism:qio_drive_supermassive"
+				}
+				{
+					id: "386BE7132B332450"
+					type: "item"
+					item: "iceandfire:dragonegg_black"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "3096B5DE750051B1"
+			tasks: [{
+				id: "158C01F0B49FA191"
+				type: "kill"
+				entity: "theabyss:abyssaur"
+				value: 1L
+			}]
+			rewards: [{
+				id: "7B9A9AA35055C5F4"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			dependencies: ["42CDDCDE36FD0351"]
+			id: "1F3C8FCDE10603CC"
+			tasks: [{
+				id: "1E4C364F45F57EB7"
+				type: "kill"
+				entity: "theabyss:the_roka"
+				value: 1L
+			}]
+			rewards: [{
+				id: "099FE762180FCD6F"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+	]
+}

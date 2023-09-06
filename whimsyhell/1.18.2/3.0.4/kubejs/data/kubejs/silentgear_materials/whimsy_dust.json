@@ -1,0 +1,95 @@
+{
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "gem",
+            "dust"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "kubejs:whimsy_dust"
+        }
+    },
+    "name": {
+        "text": "Whimsy Dust"
+    },
+    "stats": {
+        "coating": {
+            "durability": [
+                {
+                    "mul2": 0.5
+                },
+                {
+                    "add": 6.0
+                }
+            ],
+            "armor_durability": {
+                "mul2": 0.5
+            },
+            "harvest_speed": {
+                "mul2": 0.5
+            },
+            "harvest_level": {
+                "max": 5.0
+            },
+            "melee_damage": {
+                "mul2": 0.5
+            },
+            "magic_damage": {
+                "mul2": 0.5
+            },
+            "ranged_damage": {
+                "mul2": 0.5
+            },
+            "armor_toughness": {
+                "mul2": 0.5
+            },
+            "knockback_resistance": {
+                "mul2": 0.5
+            },
+            "enchantability": {
+                "mul2": 2.0
+            }
+        }
+    },
+    "traits": {
+        "coating": [
+            {
+                "name": "silentgear:accelerate",
+                "level": 5
+            },
+            {
+                "name": "silentgear:adamant",
+                "level": 5
+            },
+            {
+                "name": "silentgear:ancient",
+                "level": 5
+            },
+            {
+                "name": "silentgear:brilliant",
+                "level": 1
+            },
+            {
+                "name": "silentgear:fireproof",
+                "level": 1
+            },
+            {
+                "name": "silentgear:light",
+                "level": 5
+            },
+            {
+                "name": "silentgear:synergistic",
+                "level": 5
+            },
+            {
+                "name": "silentgear:turtle",
+                "level": 1
+            }
+        ]       
+    }
+}

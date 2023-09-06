@@ -1,0 +1,123 @@
+{
+    "availability": {
+        "tier": 5,
+        "categories": [
+            "metal"
+        ],
+        "visible": true,
+        "gear_blacklist": [],
+        "can_salvage": true
+    },
+    "crafting_items": {
+        "main": {
+            "item": "kubejs:whimsy_ingot"
+        }
+    },
+    "name": {
+        "text": "Whimsy Ingot"
+    },
+    "stats": {
+        "main": {
+            "durability": 8000.0,
+            "repair_value": -0.3,
+            "enchantability": 100.0,
+            "harvest_level": 5.0,
+            "harvest_speed": 16.0,
+            "melee_damage": 50.0,
+            "magic_damage": 35.0,
+            "attack_speed": 2.0,
+            "ranged_damage": 35.0,
+            "ranged_speed": 2.0,
+            "rarity": 500.0
+        },
+        "rod": {
+            "durability": {
+                "mul2": 1.0
+            },
+            "enchantability": {
+                "mul2": 0.5
+            },
+            "harvest_speed": {
+                "mul2": 0.3
+            },
+            "melee_damage": {
+                "mul2": 0.2
+            },
+            "magic_damage": {
+                "mul2": 0.3
+            },
+            "ranged_damage": {
+                "mul2": 0.2
+            },
+            "rarity": 500.0
+        },
+        "tip": {
+            "durability": {
+                "add": 2500.0
+            },
+            "harvest_speed": {
+                "add": 3.0
+            },
+            "melee_damage": {
+                "add": 6.0
+            },
+            "magic_damage": {
+                "add": 3.0
+            },
+            "ranged_damage": {
+                "add": 3
+            },
+            "rarity": {
+                "add": 50.0
+            }
+        }
+    },
+    "traits": {
+        "main": [
+            {
+                "name": "silentgear:fireproof",
+                "level": 1
+            },
+            {
+                "name": "silentgear:mighty",
+                "level": 5
+            },
+            {
+                "name": "silentgear:venom",
+                "level": 5
+            }
+        ],
+        "rod": [
+            {
+                "name": "silentgear:accelerate",
+                "level": 5
+            },
+            {
+                "name": "silentgear:organic",
+                "level": 5
+            },
+            {
+                "name": "silentgear:reach",
+                "level": 5
+            },
+            {
+                "name": "silentgear:synergistic",
+                "level": 5
+            }
+        ],
+        "tip": [
+            {
+                "name": "silentgear:holy",
+                "level": 5
+            },
+            {
+                "name": "silentgear:imperial",
+                "level": 5
+            },
+            {
+                "name": "silentgear:lucky",
+                "level": 7
+            }
+        ]
+    }
+}

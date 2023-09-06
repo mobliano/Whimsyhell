@@ -1,0 +1,827 @@
+{
+	id: "7A19F55F2B5932B6"
+	group: ""
+	order_index: 3
+	filename: "storage"
+	title: "Storage"
+	icon: "ironchest:diamond_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The classic chest. Never goes out of style.. or does it???"
+			id: "6A6F9757A272E62B"
+			tasks: [{
+				id: "5985912A90082471"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [{
+				id: "08FB13EBE9ABCFAF"
+				type: "item"
+				item: "metalbarrels:iron_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Chests can be upgraded using the Iron Chests mod! There are multiple tiers, increasing capacity and blast protection."
+			dependencies: ["6A6F9757A272E62B"]
+			id: "7A98B05F75FF933A"
+			tasks: [{
+				id: "1A6601FE26D64AF4"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "4A1C10DD3FE65841"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			subtitle: "Iron chests can be crafted, or you can upgrade existing chests in place using these upgrades!"
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "46B673D31E603768"
+			tasks: [{
+				id: "1EBE38498E296FB5"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+			rewards: [{
+				id: "5D7FA03457C5A16C"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["7A98B05F75FF933A"]
+			id: "57C65A69AD8CACEE"
+			tasks: [{
+				id: "6198E069134CEA32"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [{
+				id: "368F5A268ED36143"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["57C65A69AD8CACEE"]
+			id: "5DF74795AACD8A2D"
+			tasks: [{
+				id: "2BC75E1B68624902"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [{
+				id: "151380F10CBAB794"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["53D7430CED49909D"]
+			optional: true
+			id: "67426FE5FD48E40F"
+			tasks: [{
+				id: "62933141B7A19644"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+			rewards: [{
+				id: "1DD853739D0DC5C4"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["5DF74795AACD8A2D"]
+			optional: true
+			id: "53D7430CED49909D"
+			tasks: [{
+				id: "7B292D0C1F7B12FF"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+			rewards: [{
+				id: "39F210D9619F1B55"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["46B673D31E603768"]
+			optional: true
+			id: "3AF66215B3F9AF1E"
+			tasks: [{
+				id: "18324AC5E5BF36D7"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+			rewards: [{
+				id: "34A95A93EC0DA49E"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["3AF66215B3F9AF1E"]
+			optional: true
+			id: "78CF987D7EDF45E2"
+			tasks: [{
+				id: "0EFE5A1D216FD0ED"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+			rewards: [{
+				id: "0365790E175159E5"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["78CF987D7EDF45E2"]
+			optional: true
+			id: "17C8407E9E54B26C"
+			tasks: [{
+				id: "2D5941B87DD6B5F1"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+			rewards: [{
+				id: "4A96EA18A81B8730"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["17C8407E9E54B26C"]
+			optional: true
+			id: "6A04B0A4449954B9"
+			tasks: [{
+				id: "490C9563097B9B92"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+			rewards: [{
+				id: "4AD192351DFE8F5E"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Want to organize your materials by stack? Storage drawers are a great option and offer upgrade tiers, allow you to store a large number of individual items."
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "48DAE081DC7CEEB6"
+			tasks: [{
+				id: "1B89BBC3A751E72C"
+				type: "item"
+				item: "functionalstorage:oak_1"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			subtitle: "Link your drawers to this controller, and connect them to your storage network!"
+			dependencies: ["53D4812341E4E682"]
+			optional: true
+			id: "062C491F878DD491"
+			tasks: [{
+				id: "1D461AF7BE3BF9EB"
+				type: "item"
+				item: "functionalstorage:storage_controller"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["062C491F878DD491"]
+			optional: true
+			id: "2D514EE6F9105363"
+			tasks: [{
+				id: "7D0D260C3D5737DE"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["2D514EE6F9105363"]
+			optional: true
+			id: "08B8E25A31393B60"
+			tasks: [{
+				id: "34D8A35102A2094B"
+				type: "item"
+				item: "functionalstorage:armory_cabinet"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 6.0d
+			dependencies: ["08B8E25A31393B60"]
+			optional: true
+			id: "09D0FD3385C883BB"
+			tasks: [{
+				id: "31D6F0FADB08C91D"
+				type: "item"
+				item: "functionalstorage:ender_drawer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["53D4812341E4E682"]
+			optional: true
+			id: "5FD5DC85C0732716"
+			tasks: [{
+				id: "1392C903C0234BF3"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+			rewards: [{
+				id: "36A302926D87CB79"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["5FD5DC85C0732716"]
+			optional: true
+			id: "4BF86627D10F336B"
+			tasks: [{
+				id: "14E7F5E1AEE6E9DE"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+			rewards: [{
+				id: "663AA48D5533669F"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["48DAE081DC7CEEB6"]
+			optional: true
+			id: "53D4812341E4E682"
+			tasks: [{
+				id: "5C8A1441B519BA60"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["48DAE081DC7CEEB6"]
+			optional: true
+			id: "6302DC01BD19684E"
+			tasks: [{
+				id: "1889B2F2C9122B92"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["6302DC01BD19684E"]
+			optional: true
+			id: "4B816446B3994A57"
+			tasks: [{
+				id: "03F0D369F8E6F225"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Ok.. Now this is some end game storage! If you're here, you know what you're doing."
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "1C8BA367C23C50E1"
+			tasks: [{
+				id: "65C1D06535AA763A"
+				type: "item"
+				item: "mekanism:qio_drive_array"
+			}]
+			rewards: [{
+				id: "4EC481596497CF99"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "40EB605A75880373"
+			tasks: [{
+				id: "4B53E2A8E1FB7E1D"
+				type: "item"
+				item: "mekanism:qio_drive_base"
+			}]
+			rewards: [{
+				id: "1067CD537B9C6379"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "28C83766D1988E9F"
+			tasks: [{
+				id: "1ED676213057232E"
+				type: "item"
+				item: "mekanism:qio_dashboard"
+			}]
+			rewards: [{
+				id: "00C2509CEE2F4C1B"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "6EB6482F25C255B9"
+			tasks: [{
+				id: "20711D2F967BC0A0"
+				type: "item"
+				item: "mekanism:qio_exporter"
+			}]
+			rewards: [{
+				id: "50E2D1387AD459A0"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["6EB6482F25C255B9"]
+			optional: true
+			id: "156746EF59B63E0A"
+			tasks: [{
+				id: "69E6BD3F0E6B2C44"
+				type: "item"
+				item: "mekanism:qio_importer"
+			}]
+			rewards: [{
+				id: "55164A41584FC1DC"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: ["156746EF59B63E0A"]
+			optional: true
+			id: "325DEDF7122793A0"
+			tasks: [{
+				id: "10ED1BE9593889C9"
+				type: "item"
+				item: "mekanism:qio_redstone_adapter"
+			}]
+			rewards: [{
+				id: "3C4C027D6451054A"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["28C83766D1988E9F"]
+			optional: true
+			id: "41325D3A1B9E3366"
+			tasks: [{
+				id: "403A8117304E6222"
+				type: "item"
+				item: "mekanism:portable_qio_dashboard"
+			}]
+			rewards: [{
+				id: "42B639707BEBD539"
+				type: "xp"
+				xp: 150
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			dependencies: ["40EB605A75880373"]
+			optional: true
+			id: "5B05CE58BD1FC89D"
+			tasks: [{
+				id: "270F010B098375A4"
+				type: "item"
+				item: "mekanism:qio_drive_hyper_dense"
+			}]
+			rewards: [{
+				id: "7C93564C78CE0DD8"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["5B05CE58BD1FC89D"]
+			optional: true
+			id: "1AAB1494B64965A2"
+			tasks: [{
+				id: "4F790875BBE482DD"
+				type: "item"
+				item: "mekanism:qio_drive_time_dilating"
+			}]
+			rewards: [{
+				id: "0760235F9BD186F7"
+				type: "xp"
+				xp: 300
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["1AAB1494B64965A2"]
+			optional: true
+			id: "49B0053928C6DAE4"
+			tasks: [{
+				id: "1E11A0687CA83E82"
+				type: "item"
+				item: "mekanism:qio_drive_supermassive"
+			}]
+			rewards: [{
+				id: "55181197791E0F81"
+				type: "xp"
+				xp: 600
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["6A6F9757A272E62B"]
+			id: "767E66B928C2D26A"
+			tasks: [{
+				id: "04A5F0CA284D385E"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["767E66B928C2D26A"]
+			id: "352C41145721AF63"
+			tasks: [{
+				id: "536D4D272BABDCD2"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			dependencies: ["767E66B928C2D26A"]
+			id: "0656B0C1BD38AA9D"
+			tasks: [{
+				id: "7051786857D5336F"
+				type: "item"
+				item: "refinedstorage:crafting_grid"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["767E66B928C2D26A"]
+			id: "048C569F289E02A0"
+			tasks: [{
+				id: "2DD11D65B3A337C9"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["048C569F289E02A0"]
+			id: "2C35A097142D157E"
+			tasks: [{
+				id: "43E4F1CA928B38BE"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			dependencies: ["2C35A097142D157E"]
+			id: "1A85D845E2FB1683"
+			tasks: [{
+				id: "0F3128645E264303"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -4.0d
+			dependencies: ["1A85D845E2FB1683"]
+			id: "12964761279B277E"
+			tasks: [{
+				id: "152D25BDD36988E6"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["352C41145721AF63"]
+			id: "07A1BC543A0CBEB1"
+			tasks: [{
+				id: "43275579DF25AA86"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["07A1BC543A0CBEB1"]
+			id: "0E6D451A861204CE"
+			tasks: [{
+				id: "3B198CBE21CFB3F2"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["0E6D451A861204CE"]
+			id: "47C6FD16E497B846"
+			tasks: [{
+				id: "4EBB3459C54006A1"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			dependencies: ["47C6FD16E497B846"]
+			id: "62EAC677E7770468"
+			tasks: [{
+				id: "16D5047E1BF340DF"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.0d
+			dependencies: ["62EAC677E7770468"]
+			id: "516E70146722E7D9"
+			tasks: [{
+				id: "0F99299F8B6F909B"
+				type: "item"
+				item: "rebornstorage:small_item_disk_part"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -4.0d
+			dependencies: ["516E70146722E7D9"]
+			id: "6B23977A3C85038B"
+			tasks: [{
+				id: "07CA83669868BFDB"
+				type: "item"
+				item: "rebornstorage:medium_item_disk_part"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -4.0d
+			dependencies: ["6B23977A3C85038B"]
+			id: "0BD9FEC0841966E5"
+			tasks: [{
+				id: "59B0EB2A11EEE8BA"
+				type: "item"
+				item: "rebornstorage:large_item_disk_part"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -4.0d
+			dependencies: ["0BD9FEC0841966E5"]
+			id: "378F97D09B9D8435"
+			tasks: [{
+				id: "79ACF155A5985622"
+				type: "item"
+				item: "rebornstorage:larger_item_disk_part"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -6.0d
+			dependencies: ["352C41145721AF63"]
+			id: "2F11A50FA1CBFFAC"
+			tasks: [{
+				id: "5CDFDCAD7199B631"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_part"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.0d
+			dependencies: ["2F11A50FA1CBFFAC"]
+			id: "6F5F41B77E0BB369"
+			tasks: [{
+				id: "27A859B179A01BCF"
+				type: "item"
+				item: "refinedstorage:256k_fluid_storage_part"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.0d
+			dependencies: ["6F5F41B77E0BB369"]
+			id: "6D46CE62EF6A38DB"
+			tasks: [{
+				id: "5543D3F27CC6DAA3"
+				type: "item"
+				item: "refinedstorage:1024k_fluid_storage_part"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -6.0d
+			dependencies: ["6D46CE62EF6A38DB"]
+			id: "23D9C04191380FFB"
+			tasks: [{
+				id: "0FF1081F47CA6421"
+				type: "item"
+				item: "refinedstorage:4096k_fluid_storage_part"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -6.0d
+			dependencies: ["23D9C04191380FFB"]
+			id: "279DCC38ED1C939F"
+			tasks: [{
+				id: "6E2275E61320DE82"
+				type: "item"
+				item: "rebornstorage:small_fluid_disk_part"
+			}]
+		}
+		{
+			x: 14.0d
+			y: -6.0d
+			dependencies: ["279DCC38ED1C939F"]
+			id: "7A597D4C1DDF835A"
+			tasks: [{
+				id: "0A4006A93A50D7AB"
+				type: "item"
+				item: "rebornstorage:medium_fluid_disk_part"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -6.0d
+			dependencies: ["7A597D4C1DDF835A"]
+			id: "7F27ECF48F4435A1"
+			tasks: [{
+				id: "06598E5A28F0E077"
+				type: "item"
+				item: "rebornstorage:large_fluid_disk_part"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -6.0d
+			dependencies: ["7F27ECF48F4435A1"]
+			id: "7A31D030FA137E0B"
+			tasks: [{
+				id: "0EE183F3B3FEBA75"
+				type: "item"
+				item: "rebornstorage:larger_fluid_disk_part"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			dependencies: ["0656B0C1BD38AA9D"]
+			id: "60A0767FD968F989"
+			tasks: [{
+				id: "777BA7C31147BD12"
+				type: "item"
+				item: "refinedstorage:fluid_grid"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			dependencies: ["60A0767FD968F989"]
+			id: "4A7F2DA50DB798BD"
+			tasks: [{
+				id: "2844A15058AD9E99"
+				type: "item"
+				item: "refinedstorage:pattern_grid"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.0d
+			dependencies: ["4A7F2DA50DB798BD"]
+			id: "25AEE3A67C5DEECB"
+			tasks: [{
+				id: "2E2AF1C9521B3B11"
+				type: "item"
+				item: "refinedstorage:crafter_manager"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -8.0d
+			dependencies: ["25AEE3A67C5DEECB"]
+			id: "76D2F73B3615EDCE"
+			tasks: [{
+				id: "568E08FF324C4063"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["4BF86627D10F336B"]
+			optional: true
+			id: "6536FDB29DF52D3A"
+			tasks: [{
+				id: "1560B70A05F276C4"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+			rewards: [{
+				id: "490F02A08FC7AECE"
+				type: "xp"
+				xp: 150
+			}]
+		}
+	]
+}

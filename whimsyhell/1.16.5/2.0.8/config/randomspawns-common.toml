@@ -1,0 +1,6 @@
+
+[general]
+	#Radius from world spawn that players will randomly spawn in
+	#Range: 0 ~ 2000
+	radius = 2000
+

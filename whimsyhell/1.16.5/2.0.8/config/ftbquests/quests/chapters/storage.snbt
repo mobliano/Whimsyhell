@@ -1,0 +1,657 @@
+{
+	id: "7A19F55F2B5932B6"
+	group: ""
+	order_index: 2
+	filename: "storage"
+	title: "Storage"
+	icon: "ironchest:diamond_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The classic chest. Never goes out of style.. or does it???"
+			id: "6A6F9757A272E62B"
+			tasks: [{
+				id: "5985912A90082471"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Chests can be upgraded using the Iron Chests mod! There are multiple tiers, increasing capacity and blast protection."
+			dependencies: ["6A6F9757A272E62B"]
+			id: "7A98B05F75FF933A"
+			tasks: [{
+				id: "1A6601FE26D64AF4"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "4A1C10DD3FE65841"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			subtitle: "Iron chests can be crafted, or you can upgrade existing chests in place using these upgrades!"
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "46B673D31E603768"
+			tasks: [{
+				id: "1EBE38498E296FB5"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+			rewards: [{
+				id: "5D7FA03457C5A16C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["7A98B05F75FF933A"]
+			id: "57C65A69AD8CACEE"
+			tasks: [{
+				id: "6198E069134CEA32"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [{
+				id: "368F5A268ED36143"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["57C65A69AD8CACEE"]
+			id: "5DF74795AACD8A2D"
+			tasks: [{
+				id: "2BC75E1B68624902"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [{
+				id: "151380F10CBAB794"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["53D7430CED49909D"]
+			optional: true
+			id: "67426FE5FD48E40F"
+			tasks: [{
+				id: "62933141B7A19644"
+				type: "item"
+				item: "ironchest:crystal_chest"
+			}]
+			rewards: [{
+				id: "1DD853739D0DC5C4"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["5DF74795AACD8A2D"]
+			optional: true
+			id: "53D7430CED49909D"
+			tasks: [{
+				id: "7B292D0C1F7B12FF"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+			rewards: [{
+				id: "39F210D9619F1B55"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["46B673D31E603768"]
+			optional: true
+			id: "3AF66215B3F9AF1E"
+			tasks: [{
+				id: "18324AC5E5BF36D7"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+			rewards: [{
+				id: "34A95A93EC0DA49E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			dependencies: ["3AF66215B3F9AF1E"]
+			optional: true
+			id: "78CF987D7EDF45E2"
+			tasks: [{
+				id: "0EFE5A1D216FD0ED"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+			rewards: [{
+				id: "0365790E175159E5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["78CF987D7EDF45E2"]
+			optional: true
+			id: "17C8407E9E54B26C"
+			tasks: [{
+				id: "2D5941B87DD6B5F1"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+			rewards: [{
+				id: "4A96EA18A81B8730"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["17C8407E9E54B26C"]
+			optional: true
+			id: "6A04B0A4449954B9"
+			tasks: [{
+				id: "490C9563097B9B92"
+				type: "item"
+				item: "ironchest:diamond_to_crystal_chest_upgrade"
+			}]
+			rewards: [{
+				id: "4AD192351DFE8F5E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Want to organize your materials by stack? Storage drawers are a great option and offer upgrade tiers, allow you to store a large number of individual items."
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "48DAE081DC7CEEB6"
+			tasks: [{
+				id: "3FE3857452843CFF"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_1"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["48DAE081DC7CEEB6"]
+			optional: true
+			id: "062C491F878DD491"
+			tasks: [{
+				id: "64D881A2F2809D20"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_2"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["062C491F878DD491"]
+			optional: true
+			id: "2D514EE6F9105363"
+			tasks: [{
+				id: "19B490A7AFD52BF7"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_4"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["2D514EE6F9105363"]
+			optional: true
+			id: "08B8E25A31393B60"
+			tasks: [{
+				id: "63627A63709C076C"
+				type: "item"
+				item: "storagedrawers:oak_half_drawers_1"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["08B8E25A31393B60"]
+			optional: true
+			id: "09D0FD3385C883BB"
+			tasks: [{
+				id: "2E06F5E23E3D8311"
+				type: "item"
+				item: "storagedrawers:oak_half_drawers_2"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.0d
+			dependencies: ["09D0FD3385C883BB"]
+			optional: true
+			id: "5BB36E9B389B34C8"
+			tasks: [{
+				id: "7B71E335643D4669"
+				type: "item"
+				item: "storagedrawers:oak_half_drawers_4"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			subtitle: "Drawer controllers provide a way for you to integrate your drawer system into other storage mods, such as Simple Storage Networks"
+			dependencies: ["53D4812341E4E682"]
+			optional: true
+			id: "5FD5DC85C0732716"
+			tasks: [{
+				id: "3A4EE750B27AA87B"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+			rewards: [{
+				id: "36A302926D87CB79"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			subtitle: "Automatic compacting of your items to save space! Brilliant!"
+			dependencies: ["5FD5DC85C0732716"]
+			optional: true
+			id: "4BF86627D10F336B"
+			tasks: [{
+				id: "4438CCCEE7777910"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+			rewards: [{
+				id: "663AA48D5533669F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			subtitle: "Using an upgrade template, you can craft small, medium, and larger drawer upgrades. You can even put multiple upgrades in a drawer!"
+			dependencies: ["062C491F878DD491"]
+			optional: true
+			id: "53D4812341E4E682"
+			tasks: [{
+				id: "52F5CDAFC3A5AF46"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["48DAE081DC7CEEB6"]
+			optional: true
+			id: "6302DC01BD19684E"
+			tasks: [{
+				id: "3E64E2C962B23869"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["6302DC01BD19684E"]
+			optional: true
+			id: "4B816446B3994A57"
+			tasks: [{
+				id: "5529F109360EE16E"
+				type: "item"
+				item: "storagedrawers:quantify_key"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["4B816446B3994A57"]
+			optional: true
+			id: "33115BBEA6F8C47E"
+			tasks: [{
+				id: "6FD5CA1343020B2D"
+				type: "item"
+				item: "storagedrawers:shroud_key"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			subtitle: "Using the Simple Storage Network mod, you can combine your existing chests/drawers into a single storage network!"
+			dependencies: ["6A6F9757A272E62B"]
+			id: "47F447799F8CBF92"
+			tasks: [{
+				id: "7970D551E7F9E505"
+				type: "item"
+				item: "storagenetwork:master"
+			}]
+			rewards: [{
+				id: "5AE770AF6DB5B363"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			subtitle: "Easily access your items for crafting"
+			dependencies: ["47F447799F8CBF92"]
+			id: "53B01299D1B3F106"
+			tasks: [{
+				id: "4E4AFDC62553D515"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+			rewards: [{
+				id: "78E73440A4CC3A28"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			subtitle: "Remotely access your storage!"
+			dependencies: ["53B01299D1B3F106"]
+			optional: true
+			id: "70A567CD61E81225"
+			tasks: [{
+				id: "2A028141B0E2B2F2"
+				type: "item"
+				item: "storagenetwork:crafting_remote"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Connect your existing storage to the network using a link cable."
+			dependencies: ["47F447799F8CBF92"]
+			id: "12C5805C05E88D6F"
+			tasks: [{
+				id: "74464798C3DC04E6"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+			}]
+			rewards: [{
+				id: "50C1C76025B99794"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			subtitle: "Export items from the storage network"
+			dependencies: ["12C5805C05E88D6F"]
+			optional: true
+			id: "7344EBA8D12BCE13"
+			tasks: [{
+				id: "5D1B33BB97374052"
+				type: "item"
+				item: "storagenetwork:export_kabel"
+			}]
+			rewards: [{
+				id: "573FC862BFA1C028"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			subtitle: "Import items into the storage network"
+			dependencies: ["7344EBA8D12BCE13"]
+			optional: true
+			id: "60B8569579AC8293"
+			tasks: [{
+				id: "580B45987B42F8C9"
+				type: "item"
+				item: "storagenetwork:import_kabel"
+			}]
+			rewards: [{
+				id: "56C61A98F8545D18"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Control which items use the attached storage and set priority"
+			dependencies: ["12C5805C05E88D6F"]
+			optional: true
+			id: "08E71529FB0E526F"
+			tasks: [{
+				id: "0F80A8721B1C9E16"
+				type: "item"
+				item: "storagenetwork:filter_kabel"
+			}]
+			rewards: [{
+				id: "314661768022A4BE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			subtitle: "Only import certain items"
+			dependencies: ["60B8569579AC8293"]
+			optional: true
+			id: "68AAEC0E1505BB5F"
+			tasks: [{
+				id: "13BE8357CE71E4C2"
+				type: "item"
+				item: "storagenetwork:import_filter_kabel"
+			}]
+			rewards: [{
+				id: "73A5CB7515DDF1EF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Ok.. Now this is some end game storage! If you're here, you know what you're doing."
+			dependencies: ["6A6F9757A272E62B"]
+			optional: true
+			id: "1C8BA367C23C50E1"
+			tasks: [{
+				id: "65C1D06535AA763A"
+				type: "item"
+				item: "mekanism:qio_drive_array"
+			}]
+			rewards: [{
+				id: "4EC481596497CF99"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "40EB605A75880373"
+			tasks: [{
+				id: "4B53E2A8E1FB7E1D"
+				type: "item"
+				item: "mekanism:qio_drive_base"
+			}]
+			rewards: [{
+				id: "1067CD537B9C6379"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "28C83766D1988E9F"
+			tasks: [{
+				id: "1ED676213057232E"
+				type: "item"
+				item: "mekanism:qio_dashboard"
+			}]
+			rewards: [{
+				id: "00C2509CEE2F4C1B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["1C8BA367C23C50E1"]
+			optional: true
+			id: "6EB6482F25C255B9"
+			tasks: [{
+				id: "20711D2F967BC0A0"
+				type: "item"
+				item: "mekanism:qio_exporter"
+			}]
+			rewards: [{
+				id: "50E2D1387AD459A0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			dependencies: ["6EB6482F25C255B9"]
+			optional: true
+			id: "156746EF59B63E0A"
+			tasks: [{
+				id: "69E6BD3F0E6B2C44"
+				type: "item"
+				item: "mekanism:qio_importer"
+			}]
+			rewards: [{
+				id: "55164A41584FC1DC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["156746EF59B63E0A"]
+			optional: true
+			id: "325DEDF7122793A0"
+			tasks: [{
+				id: "10ED1BE9593889C9"
+				type: "item"
+				item: "mekanism:qio_redstone_adapter"
+			}]
+			rewards: [{
+				id: "3C4C027D6451054A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			dependencies: ["28C83766D1988E9F"]
+			optional: true
+			id: "41325D3A1B9E3366"
+			tasks: [{
+				id: "403A8117304E6222"
+				type: "item"
+				item: "mekanism:portable_qio_dashboard"
+			}]
+			rewards: [{
+				id: "42B639707BEBD539"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.0d
+			dependencies: ["40EB605A75880373"]
+			optional: true
+			id: "5B05CE58BD1FC89D"
+			tasks: [{
+				id: "270F010B098375A4"
+				type: "item"
+				item: "mekanism:qio_drive_hyper_dense"
+			}]
+			rewards: [{
+				id: "7C93564C78CE0DD8"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			dependencies: ["5B05CE58BD1FC89D"]
+			optional: true
+			id: "1AAB1494B64965A2"
+			tasks: [{
+				id: "4F790875BBE482DD"
+				type: "item"
+				item: "mekanism:qio_drive_time_dilating"
+			}]
+			rewards: [{
+				id: "0760235F9BD186F7"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: -10.0d
+			y: 4.0d
+			dependencies: ["1AAB1494B64965A2"]
+			optional: true
+			id: "49B0053928C6DAE4"
+			tasks: [{
+				id: "1E11A0687CA83E82"
+				type: "item"
+				item: "mekanism:qio_drive_supermassive"
+			}]
+			rewards: [{
+				id: "55181197791E0F81"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+	]
+}

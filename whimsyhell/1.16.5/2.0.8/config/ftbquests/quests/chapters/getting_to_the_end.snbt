@@ -1,0 +1,342 @@
+{
+	id: "6877953CE36DABD1"
+	group: ""
+	order_index: 11
+	filename: "getting_to_the_end"
+	title: "Getting to The End"
+	icon: "minecraft:ender_eye"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["047998828665C080"]
+			id: "4552906472D30498"
+			tasks: [{
+				id: "375E96211C9B3A66"
+				type: "kill"
+				icon: "iceandfire:spawn_egg_fire_dragon"
+				entity: "iceandfire:fire_dragon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "513FFEDA79347D08"
+				type: "item"
+				item: {
+					id: "endrem:guardian_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "To get to The End you must collect all (12) eyes. These can be found throughout Whimsyhell, and also obtained through these quest rewards. Throw any of the eyes to find The End Portal."
+			id: "047998828665C080"
+			tasks: [{
+				id: "73D676B4B2135821"
+				type: "checkmark"
+				title: "Eyes?"
+				icon: "minecraft:ender_eye"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["047998828665C080"]
+			id: "0D1715116DAFDC29"
+			tasks: [{
+				id: "47CE49EB5083F60F"
+				type: "kill"
+				icon: {
+					id: "conjurer_illager:conjurer_hat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "conjurer_illager:conjurer"
+				value: 1L
+			}]
+			rewards: [{
+				id: "7E15DBC5C0CC7B12"
+				type: "item"
+				item: {
+					id: "endrem:witch_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["047998828665C080"]
+			id: "2DF3B0F3BE5701DD"
+			tasks: [{
+				id: "31F521CE283A541A"
+				type: "kill"
+				icon: "illagers_plus:illager_king_egg"
+				entity: "illagers_plus:illager_king"
+				value: 1L
+			}]
+			rewards: [{
+				id: "18D99EA075FF81C3"
+				type: "item"
+				item: {
+					id: "endrem:rogue_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["047998828665C080"]
+			id: "27245B54BA7B2BCC"
+			tasks: [{
+				id: "7DEB8554E3EC8E3A"
+				type: "kill"
+				icon: {
+					id: "dungeonsmod:king_crown"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "dungeonsmod:king"
+				value: 1L
+			}]
+			rewards: [{
+				id: "34A62815EAD4A671"
+				type: "item"
+				item: {
+					id: "endrem:old_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: ["047998828665C080"]
+			id: "0AF1B2022B1887DF"
+			tasks: [{
+				id: "52D865F4984FBFD8"
+				type: "kill"
+				icon: "goblinsanddungeons:goblin_king_spawn_egg"
+				entity: "goblinsanddungeons:goblin_king"
+				value: 1L
+			}]
+			rewards: [{
+				id: "153D320FB55262D0"
+				type: "item"
+				item: {
+					id: "endrem:corrupted_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["047998828665C080"]
+			id: "5AD183F0BD1F7ECC"
+			tasks: [{
+				id: "33B38DCED91F2397"
+				type: "kill"
+				icon: "mowziesmobs:frostmaw_spawn_egg"
+				entity: "mowziesmobs:frostmaw"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2A3C1F19EDBB0FC9"
+				type: "item"
+				item: {
+					id: "endrem:cold_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["047998828665C080"]
+			id: "1D682071D73C6885"
+			tasks: [{
+				id: "4E8ABAF1EDEC73E5"
+				type: "kill"
+				icon: "dungeonsmod:kraken_tentacle"
+				entity: "dungeonsmod:kraken"
+				value: 1L
+			}]
+			rewards: [{
+				id: "0A28E5EFBC12D056"
+				type: "item"
+				item: {
+					id: "endrem:black_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["047998828665C080"]
+			id: "610D95A0B37548A6"
+			tasks: [{
+				id: "58A19AA6781370DD"
+				type: "kill"
+				icon: "mowziesmobs:barako_spawn_egg"
+				entity: "mowziesmobs:barako"
+				value: 1L
+			}]
+			rewards: [{
+				id: "3FCF5EED23AFEA12"
+				type: "item"
+				item: {
+					id: "endrem:lost_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			dependencies: ["047998828665C080"]
+			id: "635DB76101ADD9EE"
+			tasks: [{
+				id: "21E750ABEA8B72E4"
+				type: "kill"
+				icon: "mowziesmobs:wroughtnaut_spawn_egg"
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				value: 1L
+			}]
+			rewards: [{
+				id: "46252B62FB0B8726"
+				type: "item"
+				item: {
+					id: "endrem:magical_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			dependencies: ["047998828665C080"]
+			id: "303C6B3CDA062BE2"
+			tasks: [{
+				id: "323CF1789F25776C"
+				type: "kill"
+				icon: {
+					id: "silentgems:soul_gem"
+					Count: 1b
+					tag: {
+						SGems_SoulGem: "lycanitesmobs:ignibus"
+					}
+				}
+				entity: "lycanitesmobs:ignibus"
+				value: 1L
+			}]
+			rewards: [{
+				id: "23C83FA77C597837"
+				type: "item"
+				item: {
+					id: "endrem:nether_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["047998828665C080"]
+			id: "250E45868D5F93A4"
+			tasks: [{
+				id: "693D80F8D1D423B5"
+				type: "kill"
+				icon: {
+					id: "lycanitesmobs:equipmentpart_naxiriseye"
+					Count: 1b
+					tag: {
+						equipmentLevel: 1
+					}
+				}
+				entity: "lycanitesmobs:naxiris"
+				value: 1L
+			}]
+			rewards: [{
+				id: "77C8A244938D8DAD"
+				type: "item"
+				item: {
+					id: "endrem:wither_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["047998828665C080"]
+			id: "088A0AFFF20A1763"
+			tasks: [{
+				id: "7F8992AFD731C5DE"
+				type: "kill"
+				icon: {
+					id: "lycanitesmobs:equipmentpart_astarothclaw"
+					Count: 1b
+					tag: {
+						equipmentLevel: 1
+					}
+				}
+				entity: "lycanitesmobs:astaroth"
+				value: 1L
+			}]
+			rewards: [{
+				id: "0F646671A5C6FC2B"
+				type: "item"
+				item: {
+					id: "endrem:end_crystal_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

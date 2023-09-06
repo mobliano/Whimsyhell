@@ -1,0 +1,177 @@
+{
+	id: "729ACD006E733691"
+	group: ""
+	order_index: 1
+	filename: "silent_gear"
+	title: "Weapons/Tools/Armor"
+	icon: {
+		id: "theabyss:nosaj_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.5d
+			y: 3.5d
+			subtitle: "Break down affix items into their respective forging materials."
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "3FC7D0D807EBF53A"
+			tasks: [{
+				id: "381ABAF93425E045"
+				type: "item"
+				item: "apotheosis:salvaging_table"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			subtitle: "Use the Reforging Table to add or change affixes on items, including sockets!"
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "4EFDBA5BE81D93BF"
+			tasks: [{
+				id: "3503A0547E8479B3"
+				type: "item"
+				item: "apotheosis:reforging_table"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			subtitle: "Obtain gem dust by dropping an anvil on any socketable gem."
+			dependencies: ["3655D173BAC3D975"]
+			id: "7C0FE83F25E131D2"
+			tasks: [{
+				id: "2802F2A6A644EFEE"
+				type: "item"
+				item: "apotheosis:gem_dust"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "0098E6BE2197CCF9"
+			tasks: [{
+				id: "72AD55BBE514827F"
+				type: "item"
+				item: "apotheosis:common_material"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "277BC22282198B0F"
+			tasks: [{
+				id: "092125108F8C1ABC"
+				type: "item"
+				item: "apotheosis:uncommon_material"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "6D53E84864C6DABC"
+			tasks: [{
+				id: "24A112A02A0CE3CD"
+				type: "item"
+				item: "apotheosis:rare_material"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "41C1C1766D24763E"
+			tasks: [{
+				id: "0F739F79D46B3BDA"
+				type: "item"
+				item: "apotheosis:epic_material"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "7CDFE88536810597"
+			tasks: [{
+				id: "5F7BB7B14701F440"
+				type: "item"
+				item: "apotheosis:mythic_material"
+			}]
+		}
+		{
+			title: "The Power of Affix Items and Socketing Gems!"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+			}
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Adventuring and finding items through loot chests and killing mobs will be critical to your sucess in Whimsyhell. Not only will you be rewarded with great loot, but you will also want to salvage items to obtain tiered crafting and forging materials."
+			size: 1.25d
+			id: "3655D173BAC3D975"
+			tasks: [{
+				id: "71A38FE39A5F5E35"
+				type: "checkmark"
+				title: "Lengendary Power!!!"
+			}]
+			rewards: [{
+				id: "7E95048A145B1B02"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			subtitle: "Add sockets to items without reforging"
+			dependencies: ["3655D173BAC3D975"]
+			id: "22280367BBCC8603"
+			tasks: [{
+				id: "408A7CFE85562D21"
+				type: "item"
+				item: "apotheosis:sigil_of_socketing"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			subtitle: "Unsocket gems from items, destroying the gem in the process."
+			dependencies: ["22280367BBCC8603"]
+			id: "6F99A2A816615790"
+			tasks: [{
+				id: "257D2EFF65385A9B"
+				type: "item"
+				item: "apotheosis:vial_of_expulsion"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			subtitle: "Unsocket gems from items, destroying the item in the process."
+			dependencies: ["22280367BBCC8603"]
+			id: "0769510463824A9D"
+			tasks: [{
+				id: "2B2BCBDCAD9922E4"
+				type: "item"
+				item: "apotheosis:vial_of_extraction"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
