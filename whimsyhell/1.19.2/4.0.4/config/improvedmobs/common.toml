@@ -11,7 +11,7 @@
 	#Example ["0-0.01","10-0.1","30-0"]
 	#So the difficulty increases by 0.01 every 2400 ticks (->0.1 per mc day since a mc day has 24000 ticks) till it reaches a difficulty of 10.
 	#Then it increases by 1 per mc day till it reaches 30 and then stops.
-	"Difficulty Increase" = ["0-0.1", "100-0.25", "250-0.5", "500-0.75", "1000-0"]
+	"Difficulty Increase" = ["0-0.02", "200-0"]
 	#Wether difficulty should only increase with at least one online players or not
 	"Ignore Players" = false
 	#If true will increase difficulty by the amount of time skipped. Else will only increase difficulty once.
@@ -87,13 +87,13 @@
 	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
 	#Note: If you include common blocks (like grass blocks) the pathfinding can have undesirable results.
 	"Block Break Whitelist" = ["forge:glass", "forge:glass_panes", "minecraft:fence_gates", "forge:fence_gates", "minecraft:wooden_doors"]
-	#Treat Block Whitelist as Blocklist
+	#Treat Block Whitelist as Blacklist
 	"Breaklist as Blacklist" = false
 	#Use the block breaking sound instead of a knocking sound
 	Sound = false
 	#Chance for a mob to be able to break blocks
 	#Range: 0.0 ~ 1.0
-	"Breaker Chance" = 0.3
+	"Breaker Chance" = 0.25
 	#Initial cooldown for block breaking mobs
 	#Range: > 0
 	"Breaker Initial Cooldown" = 120
@@ -130,18 +130,18 @@
 #Configs regarding mobs spawning with equipment
 [equipment]
 	#Blacklist items from whole mods. Add modid to prevent items from that mod being equipped. (For individual items use the equipment.json)
-	"Item Blacklist" = []
+	"Item Blacklist" = ["minecraft", "apotheosis", "bygonenether", "piglin_expansion"]
 	#Use blacklist as whitelist
-	"Item Whitelist" = false
+	"Item Whitelist" = true
 	#Blacklist for items mobs should never be able to use.
 	#Use as in using the item similar to players (e.g. shooting bows)
-	"Item Use Blacklist" = ["bigbrain:buckler","whimsyhell:whimsy_sword"]
+	"Item Use Blacklist" = ["bigbrain:buckler"]
 	#Turn the use blacklist into a whitelist
 	"Item Use Whitelist" = false
 	#Blacklist for specific mobs and items they shouldnt use (e.g. skeletons already use bows)
 	#<entity registry name-item>
 	#For different items but same entity use multiple lines
-	#Some special names are BOW, TRIDEN, CROSSBOW refering to every bow/trident/crossbow item (So you dont need to type e.g. every bow item)
+	#Some special names are BOW, TRIDENT, CROSSBOW refering to every bow/trident/crossbow item (So you dont need to type e.g. every bow item)
 	"Entity Item Use Blacklist" = ["minecraft:drowned;TRIDENT", "minecraft:illusioner;BOW", "minecraft:piglin;CROSSBOW", "minecraft:pillager;CROSSBOW", "minecraft:skeleton;BOW", "minecraft:snow_golem;minecraft:snowball", "minecraft:stray;BOW", "minecraft:wither_skeleton;BOW"]
 	#Base chance that a mob can have one piece of armor
 	#Range: 0.0 ~ 1.0

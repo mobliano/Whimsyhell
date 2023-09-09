@@ -28,6 +28,7 @@
 					type: "item"
 				}
 			]
+			size: 1.25d
 			subtitle: "Good luck!"
 			tasks: [{
 				dimension: "theabyss:the_abyss"
@@ -36,8 +37,8 @@
 				title: "Enter The Abyss"
 				type: "dimension"
 			}]
-			x: -4.5d
-			y: -0.5d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["42CDDCDE36FD0351"]
@@ -61,8 +62,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["42CDDCDE36FD0351"]
@@ -86,8 +87,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
-			y: 1.5d
+			x: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["42CDDCDE36FD0351"]
@@ -111,17 +112,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"1F3C8FCDE10603CC"
-				"7A7BC9ED0BE5D709"
-				"2D4662A47AF18D0B"
-				"0040EE8193E308E6"
-				"3096B5DE750051B1"
-			]
+			dependencies: ["0FDFE0BD76CF8438"]
 			id: "1630DBFF8B6A6AED"
 			rewards: [
 				{
@@ -164,8 +159,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["42CDDCDE36FD0351"]
@@ -189,8 +184,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["42CDDCDE36FD0351"]
@@ -215,7 +210,22 @@
 				value: 1L
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1F3C8FCDE10603CC"
+				"2D4662A47AF18D0B"
+				"7A7BC9ED0BE5D709"
+			]
+			id: "0FDFE0BD76CF8438"
+			tasks: [{
+				id: "519A1D9B77CF5120"
+				item: "theabyss:eye_of_abyss"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "The Abyss"
