@@ -172,13 +172,14 @@
 			y: 1.5d
 		}
 		{
-			icon: "minecraft:white_bed"
-			id: "0C604BD246BC0511"
-			subtitle: "You will have dreams (or nightmares) the first two times you sleep. These are a hint of what's to come after you defeat The End! See The Abyss quest for more detail."
+			description: ["To find the best loot, try looking in another dimension. As a general rule, the more difficult the dimension, the better the loot rewards! Oh and The Overworld is the easiest dimension. ;)"]
+			id: "69B14D9BA37C1B7C"
+			subtitle: "Whimsyhell has instanced loot chests, which means everyone gets loot!"
 			tasks: [{
-				id: "348E59EF002C802D"
-				title: "Dreams or Nightmares?"
-				type: "checkmark"
+				advancement: "lootr:1chest"
+				criterion: ""
+				id: "63145F6C0EA936FC"
+				type: "advancement"
 			}]
 			x: 2.0d
 			y: 1.5d

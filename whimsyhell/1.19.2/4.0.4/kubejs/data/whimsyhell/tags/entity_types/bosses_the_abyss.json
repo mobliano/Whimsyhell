@@ -1,0 +1,12 @@
+{
+    "__comment": "All abyss entities that we consider a boss.",
+    "replace": false,
+    "values": [
+        "theabyss:nightblade_boss",
+        "theabyss:the_roka",
+        "theabyss:crystal_golem",
+        "theabyss:the_elder",
+        "theabyss:the_magician",
+        "theabyss:the_abyssaur"
+    ]
+}

@@ -35,8 +35,8 @@
 				item: "apotheosis:salvaging_table"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7C0FE83F25E131D2"]
@@ -47,8 +47,8 @@
 				item: "apotheosis:reforging_table"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.5d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3655D173BAC3D975"]
@@ -59,8 +59,8 @@
 				item: "apotheosis:gem_dust"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 1.5d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3FC7D0D807EBF53A"]
@@ -70,8 +70,8 @@
 				item: "apotheosis:common_material"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3FC7D0D807EBF53A"]
@@ -81,8 +81,8 @@
 				item: "apotheosis:uncommon_material"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3FC7D0D807EBF53A"]
@@ -92,8 +92,8 @@
 				item: "apotheosis:rare_material"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.5d
+			x: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3FC7D0D807EBF53A"]
@@ -103,8 +103,8 @@
 				item: "apotheosis:epic_material"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3FC7D0D807EBF53A"]
@@ -114,8 +114,8 @@
 				item: "apotheosis:mythic_material"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
+			x: 7.0d
+			y: 5.0d
 		}
 		{
 			description: ["Weapons, tools, and armor all effect your attributes. Unsure if an item is an upgrade? Check your attributes!"]
@@ -153,8 +153,8 @@
 				type: "checkmark"
 			}]
 			title: "The Power of Affix Items and Socketing Gems!"
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3655D173BAC3D975"]
@@ -165,8 +165,8 @@
 				item: "apotheosis:sigil_of_socketing"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22280367BBCC8603"]
@@ -177,8 +177,8 @@
 				item: "apotheosis:vial_of_expulsion"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["22280367BBCC8603"]
@@ -189,8 +189,260 @@
 				item: "apotheosis:vial_of_extraction"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:target"
+			id: "1AD6EE96BA0F4CF8"
+			rewards: [{
+				id: "396DE97DB6319311"
+				item: {
+					Count: 1b
+					id: "minecraft:splash_potion"
+					tag: {
+						Potion: "goblintraders:powerful_instant_health"
+					}
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "As a general rule, you will find higher tier affix items and gems in more difficult dimensions, however Whimsyhell also has other target farming options available. The mob list below shows items you can potentially drop by killing particular mobs. Good luck!"
+			tasks: [{
+				id: "4B9E17514007917A"
+				title: "Target Farming"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			icon: "apotheosis:warden_tendril"
+			id: "064BB17AF26A2237"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "28EADCF67BE76B88"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.0d
+			y: 9.5d
+		}
+		{
+			icon: "mysticalagradditions:withering_soul"
+			id: "1B8B93150A35E488"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "6D29B3AFA1968F46"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "676ABB29DFDAB349"
+			tasks: [{
+				id: "471A1058D3CD6BCB"
+				item: {
+					Count: 1b
+					id: "cataclysm:ignitium_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "4F5237C7AB7F6D20"
+			tasks: [{
+				id: "0F15E0608D738D69"
+				item: {
+					Count: 1b
+					id: "piglin_expansion:divinity_netherite_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "46AB4954BF3B8D4B"
+			tasks: [{
+				id: "564BA03594F3DE17"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:supremium_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "1D61E8C83DD099EB"
+			tasks: [{
+				id: "5D4188B823C8789A"
+				item: {
+					Count: 1b
+					id: "piglin_expansion:divinity_netherite_armor_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "10D829DC41748222"
+			tasks: [{
+				id: "39C10194326F6306"
+				item: {
+					Count: 1b
+					id: "cataclysm:ignitium_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["064BB17AF26A2237"]
+			id: "324F092AA007364B"
+			tasks: [{
+				id: "49DDA9610EDBF69C"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:supremium_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "263822E23C850216"
+			tasks: [{
+				id: "563086D7FE03842C"
+				item: {
+					Count: 1b
+					id: "cataclysm:ignitium_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "70E93AB28F81F724"
+			tasks: [{
+				id: "41F5E803DE7AE328"
+				item: {
+					Count: 1b
+					id: "piglin_expansion:divinity_netherite_armor_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "4AC6E280D84F9971"
+			tasks: [{
+				id: "069F9C45211CFF76"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:supremium_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "3E330606C81CD071"
+			tasks: [{
+				id: "3AAEBC9C23E9CD1C"
+				item: {
+					Count: 1b
+					id: "piglin_expansion:divinity_netherite_armor_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "0DB0EB12C2D48347"
+			tasks: [{
+				id: "57C47D1C868B5B74"
+				item: {
+					Count: 1b
+					id: "cataclysm:ignitium_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1B8B93150A35E488"]
+			id: "313FD35658A30118"
+			tasks: [{
+				id: "5F419AE358DCA4E4"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:supremium_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
 		}
 	]
 	title: "Weapons/Tools/Armor"

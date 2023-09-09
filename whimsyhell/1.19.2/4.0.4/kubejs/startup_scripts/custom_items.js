@@ -19,6 +19,14 @@ StartupEvents.registry('item', event => {
     .tooltip("§5Enemies hear a whimsical slice!")  
     .tooltip("§5…and then silence forever.")
     .displayName("The Sword of Whimsyhell")
+
+    event.create('whimsyhell:whimsy_sword_dev', 'sword')
+    .tier('netherite')
+    .attackDamageBaseline(999999.0)
+    .speedBaseline(5.0)
+    .maxDamage(8000)
+    .tooltip("§5Sword for development use only.")  
+    .displayName("The Sword of Whimsyhell Development")
 })
 
 

@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         { output: 'quark:forgotten_hat' },
         { output: 'cataclysm:ignitium_helmet' },
         { output: 'cataclysm:ignitium_chestplate' },
-        { output: 'cataclysm:ignitium_elytra_chestplate' },
+        // { output: 'cataclysm:ignitium_elytra_chestplate' },
         { output: 'cataclysm:ignitium_leggings' },
         { output: 'cataclysm:ignitium_boots' },
         { output: 'cataclysm:monstrous_helm' },
@@ -37,10 +37,10 @@ ServerEvents.recipes(event => {
         { output: 'piglin_expansion:divinity_netherite_armor_leggings' },
         { output: 'piglin_expansion:divinity_netherite_armor_boots' },
         { output: 'piglin_expansion:piglin_divinity_staff' },
-        { output: 'bygonenether:gilded_netherite_helmet' },
-        { output: 'bygonenether:gilded_netherite_chestplate' },
-        { output: 'bygonenether:gilded_netherite_leggings' },
-        { output: 'bygonenether:gilded_netherite_boots' },
+        // { output: 'bygonenether:gilded_netherite_helmet' },
+        // { output: 'bygonenether:gilded_netherite_chestplate' },
+        // { output: 'bygonenether:gilded_netherite_leggings' },
+        // { output: 'bygonenether:gilded_netherite_boots' },
         { output: 'mysticalagriculture:inferium_sword' },
         { output: 'mysticalagriculture:inferium_pickaxe' },
         { output: 'mysticalagriculture:inferium_shovel' },
@@ -115,10 +115,10 @@ ServerEvents.recipes(event => {
         { output: 'mysticalagriculture:awakened_supremium_scythe' },
         { output: 'mysticalagriculture:awakened_supremium_sickle' },
         { output: 'mysticalagriculture:awakened_supremium_crossbow' },
-        { output: 'mysticalagriculture:awakened_supremium_helmet' },
-        { output: 'mysticalagriculture:awakened_supremium_chestplate' },
-        { output: 'mysticalagriculture:awakened_supremium_leggings' },
-        { output: 'mysticalagriculture:awakened_supremium_boots' },
+        // { output: 'mysticalagriculture:awakened_supremium_helmet' },
+        // { output: 'mysticalagriculture:awakened_supremium_chestplate' },
+        // { output: 'mysticalagriculture:awakened_supremium_leggings' },
+        // { output: 'mysticalagriculture:awakened_supremium_boots' },
         { output: 'mysticalagriculture:unattuned_augment' },
         { output: 'mysticalagriculture:absorption_i_augment' },
         { output: 'mysticalagriculture:health_boost_i_augment' },
@@ -180,20 +180,46 @@ ServerEvents.recipes(event => {
     // event.recipes.create.mixing(output[], input[]).superheated()
     event.recipes.create.mixing('whimsyhell:whimsy_ingot', ['whimsyhell:whimsy_dust', 'mysticalagriculture:awakened_supremium_ingot']).superheated()
 
+    // Standard Crafting
+    // event.shaped(Item.of('output', count), pattern[], keys{})
+    // event.shaped(
+    //     Item.of('whimsyhell:whimsy_sword', 1),
+    //     [
+    //         'WWW',
+    //         'MFW',
+    //         'AMW'
+    //     ],
+    //     {
+    //         A: 'theabyss:abyss_sword',
+    //         F: 'forbidden_arcanus:eternal_stella',
+    //         M: 'mysticalagradditions:nether_star_crux',
+    //         W: 'whimsyhell:whimsy_ingot'
+    //     }
+    // )
 
-    // event.shaped(Item.of('output', <output count>), [<shape>],{<shape_mappings>})
-    event.shaped(
-        Item.of('whimsyhell:whimsy_sword', 1),
+    // Create Mechanical Crafting (Supports up to 9x9 grid)
+    // event.recipes.create.mechanical_crafting(output, pattern[], keys{})
+    event.recipes.create.mechanical_crafting(
+        'whimsyhell:whimsy_sword',
         [
-            'WWW',
-            'MFW',
-            'AMW'
+            ' W ',
+            ' W ',
+            ' W ',
+            'OAO',
+            ' M ',
+            ' F '
         ],
         {
             A: 'theabyss:abyss_sword',
             F: 'forbidden_arcanus:eternal_stella',
             M: 'mysticalagradditions:nether_star_crux',
+            O: 'apotheosis:mythic_material',
             W: 'whimsyhell:whimsy_ingot'
         }
     )
+
+    // event.recipes.create.crushing(output[], input)
+    // event.recipes.create.crushing(output[], input).processingTime(int)
+    // event.recipes.create.crushing(['diamond', Item.of('diamond').withChance(0.5)], 'coal_block').processingTime(500)
+    event.recipes.create.crushing(Item.of('minecraft:netherite_scrap', 2), 'minecraft:ancient_debris').processingTime(100)
 })
