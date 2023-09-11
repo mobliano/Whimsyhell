@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:netherite_boots",
+		"mysticalagriculture:supremium_boots",
+		"cataclysm:ignitium_boots",
+		"piglin_expansion:divinity_netherite_armor_boots"
+	]
+}

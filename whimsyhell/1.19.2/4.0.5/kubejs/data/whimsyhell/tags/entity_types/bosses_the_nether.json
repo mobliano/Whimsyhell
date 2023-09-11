@@ -1,0 +1,22 @@
+{
+    "__comment": "All nether entities that we consider a boss.",
+    "replace": false,
+    "values": [
+        "apotheosis:withering_archer",
+        "brutalbosses:blazeboss",
+        "brutalbosses:ghastboss",
+        "brutalbosses:piglinbruteboss",
+        "brutalbosses:witherskeletonrangedboss",
+        "brutalbosses:witherskeletonshieldboss",
+        "brutalbosses:zoglinboss",
+        "bygonenether:corpor",
+        "bygonenether:piglin_hunter",
+        "bygonenether:warped_enderman",
+        "bygonenether:wither_skeleton_knight",
+        "bygonenether:wraither",
+        "cataclysm:netherite_monstrosity",
+        "cataclysm:ignis",
+        "cataclysm:ignited_revenant",
+        "minecraft:wither"
+    ]
+}

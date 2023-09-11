@@ -1,0 +1,189 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:cobblestone"
+	id: "52773EF811AA49E2"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 10.0d
+			hover: [ ]
+			image: "packmenu:textures/gui/title.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "packmenu:textures/gui/logo.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "packmenu:textures/gui/logo.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.5d
+			y: -7.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This section explains some of the basics to help you along your journey! Here, take a bandage to help heal faster."]
+			id: "7AE17935282AAAC0"
+			rewards: [{
+				id: "4F1997F906B23B9A"
+				item: "firstaid:bandage"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "Welcome to Whimsyhell, an exciting world of not-so-peaceful creatures and painful consequences."
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "2B33D4B6350C6759"
+				type: "dimension"
+			}]
+			title: "Welcome to Whimsyhell!"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "17716E10A21F71E9"
+			subtitle: "You can find waystones throughout Whimsyhell. These will really help you get around the world."
+			tasks: [{
+				id: "751ACE33E49CA653"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "Waystones"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			id: "2DB4713047F5D2C7"
+			subtitle: "These are no ordinary spawners! Check the JEI to see all the ways you can modify them to your liking. Spawners can be obtained using the Silk Touch enchantment."
+			tasks: [{
+				id: "11C870A22041ABDF"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			id: "6BAED1EF3B4467C6"
+			subtitle: "Sharestones are similar to Waystones, except they are visible to all players in the world. Setup unique Sharestone networks by color coding them!"
+			tasks: [{
+				id: "7962145D0BD0A577"
+				item: "waystones:sharestone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			icon: "minecraft:cake"
+			id: "64063C3A6426E8D0"
+			rewards: [{
+				id: "59C9B329C2A56916"
+				item: "mca:book_romance"
+				type: "item"
+			}]
+			subtitle: "You will notice villagers have been completely re-worked in Whimsyhell. Each villager has their own personality, race, gender, etc. Talk and get to know them!"
+			tasks: [{
+				advancement: "morevillagers:first_village"
+				criterion: ""
+				id: "2A17229D5DC52E46"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			icon: "theabyss:anima_fire"
+			id: "52A2351CC5A86D35"
+			optional: true
+			rewards: [{
+				command: "/mca destiny"
+				exclude_from_claim_all: true
+				icon: "theabyss:anima_fire"
+				id: "4922F7223A00982D"
+				player_command: true
+				team_reward: false
+				title: "Chose your destiny!"
+				type: "command"
+			}]
+			subtitle: "Like Villagers, you too can have your own personality, race, gender, etc. When you're ready, you can chose your destiny by clicking on this reward."
+			tasks: [{
+				advancement: "morevillagers:first_village"
+				criterion: ""
+				id: "2C5EAC7EDB639F5E"
+				type: "advancement"
+			}]
+			title: "Chose your own destiny!"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			id: "3188208C1D07756C"
+			rewards: [{
+				id: "300EB32FA8A77F41"
+				item: "mca:blueprint"
+				type: "item"
+			}]
+			subtitle: "When you're ready, you can use this blueprint to build and manage your village! Will you be a generous leader, or an oppressive overlord who imposes high taxes on their people?!? You decide!"
+			tasks: [{
+				advancement: "morevillagers:first_village"
+				criterion: ""
+				icon: "mca:blueprint"
+				id: "62D1E971B91627D3"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "14E08E98F4E36CAA"
+			subtitle: "If you want to sleep without reseting your spawn, use a sleeping bag!"
+			tasks: [{
+				id: "7664A70831A99FB0"
+				item: "comforts:sleeping_bag_white"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			description: ["To find the best loot, try looking in another dimension. As a general rule, the more difficult the dimension, the better the loot rewards! Oh and The Overworld is the easiest dimension. ;)"]
+			id: "69B14D9BA37C1B7C"
+			subtitle: "Whimsyhell has instanced loot chests, which means everyone gets loot!"
+			tasks: [{
+				advancement: "lootr:1chest"
+				criterion: ""
+				id: "63145F6C0EA936FC"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "Getting Started"
+}
