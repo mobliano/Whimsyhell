@@ -659,7 +659,7 @@
 				icon: "theabyss:nightblade_boss_spawn_egg"
 				id: "2C48024755262782"
 				type: "kill"
-				value: 250L
+				value: 100L
 			}]
 			x: 0.0d
 			y: -4.0d

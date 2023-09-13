@@ -44,7 +44,7 @@ JEIEvents.hideItems(event => {
         'mysticalagriculture:inferium_sword',
         'mysticalagriculture:inferium_pickaxe',
         'mysticalagriculture:inferium_shovel',
-        'mysticalagriculture:inferium_axe',
+        // 'mysticalagriculture:inferium_axe',
         'mysticalagriculture:inferium_staff',
         'mysticalagriculture:inferium_crossbow',
         'mysticalagriculture:inferium_bow',
@@ -57,7 +57,7 @@ JEIEvents.hideItems(event => {
         'mysticalagriculture:prudentium_sword',
         'mysticalagriculture:prudentium_pickaxe',
         'mysticalagriculture:prudentium_shovel',
-        'mysticalagriculture:prudentium_axe',
+        // 'mysticalagriculture:prudentium_axe',
         'mysticalagriculture:prudentium_staff',
         'mysticalagriculture:prudentium_crossbow',
         'mysticalagriculture:prudentium_bow',
@@ -70,7 +70,7 @@ JEIEvents.hideItems(event => {
         'mysticalagriculture:tertium_sword',
         'mysticalagriculture:tertium_pickaxe',
         'mysticalagriculture:tertium_shovel',
-        'mysticalagriculture:tertium_axe',
+        // 'mysticalagriculture:tertium_axe',
         'mysticalagriculture:tertium_staff',
         'mysticalagriculture:tertium_crossbow',
         'mysticalagriculture:tertium_bow',
@@ -169,6 +169,7 @@ JEIEvents.hideItems(event => {
         'mysticalagradditions:imperium_paxel',
         'mysticalagradditions:supremium_paxel',
         'mysticalagradditions:awakened_supremium_paxel',
-        'mysticalagradditions:inferium_paxel'
+        'mysticalagradditions:inferium_paxel',
+        'whimsyhell:whimsy_sword_dev'
     ])
 })

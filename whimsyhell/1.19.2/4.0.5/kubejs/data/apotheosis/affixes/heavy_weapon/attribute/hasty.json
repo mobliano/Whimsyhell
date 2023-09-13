@@ -1,0 +1,40 @@
+{
+	"type": "apotheosis:attribute",
+	"attribute": "minecraft:generic.attack_speed",
+	"operation": "ADDITION",
+	"values": {
+		"common": {
+			"min": 0.15,
+			"steps": 4,
+			"step": 0.10
+		},
+		"uncommon": {
+			"min": 0.25,
+			"steps": 6,
+			"step": 0.10
+		},
+		"rare": {
+			"min": 0.50,
+			"steps": 6,
+			"step": 0.10
+		},
+		"epic": {
+			"min": 0.75,
+			"steps": 8,
+			"step": 0.10
+		},
+		"mythic": {
+			"min": 1,
+			"steps": 8,
+			"step": 0.10
+		},
+		"ancient": {
+			"min": 2,
+			"steps": 8,
+			"step": 0.10
+		}
+	},
+	"types": [
+		"heavy_weapon"
+	]
+}

@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info('KubeJS - Loading Whimsyhell Custom Events')
+console.info('KubeJS - Loading Whimsyhell Recipe Events')
 
 ServerEvents.recipes(event => {
     // Remove recipes

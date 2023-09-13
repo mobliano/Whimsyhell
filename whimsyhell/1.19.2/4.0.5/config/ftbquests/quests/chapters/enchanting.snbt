@@ -118,28 +118,11 @@
 		{
 			dependencies: ["5BCC3625C4A215AC"]
 			id: "379424FBBAF22B2F"
-			rewards: [
-				{
-					id: "3A5ADF79F0D09A3C"
-					type: "xp"
-					xp: 600
-				}
-				{
-					id: "18A74E1E4123E892"
-					item: {
-						Count: 1b
-						id: "dragonmounts:dragon_egg"
-						tag: {
-							BlockEntityTag: {
-								Breed: "dragonmounts:forest"
-								HatchTime: 12000
-							}
-							ItemName: "dragon_breed.dragonmounts.forest"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3A5ADF79F0D09A3C"
+				type: "xp"
+				xp: 600
+			}]
 			subtitle: "The Enchantment Library can store all of your enchanments, and allows you to control the level of each enchantment you pull out. Put enchaments into the library using enchanted books."
 			tasks: [{
 				id: "2A70AC23A08B6AA8"

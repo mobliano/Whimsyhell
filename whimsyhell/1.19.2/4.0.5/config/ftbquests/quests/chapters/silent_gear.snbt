@@ -165,11 +165,11 @@
 				item: "apotheosis:sigil_of_socketing"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["22280367BBCC8603"]
+			dependencies: ["3655D173BAC3D975"]
 			id: "6F99A2A816615790"
 			subtitle: "Unsocket gems from items, destroying the gem in the process."
 			tasks: [{
@@ -178,10 +178,10 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["22280367BBCC8603"]
+			dependencies: ["3655D173BAC3D975"]
 			id: "0769510463824A9D"
 			subtitle: "Unsocket gems from items, destroying the item in the process."
 			tasks: [{
@@ -189,8 +189,8 @@
 				item: "apotheosis:vial_of_extraction"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			icon: "minecraft:target"
@@ -443,6 +443,75 @@
 			}]
 			x: 0.0d
 			y: 10.5d
+		}
+		{
+			id: "1D1B2F46CCDC8C59"
+			subtitle: "There are many spiders in Whimsyhell. Some seem to drop an axe or two when looting's involved. The bigger the spider, the better the reward!"
+			tasks: [
+				{
+					entity: "radioactive_spiders:mother_scary_spider"
+					icon: "radioactive_spiders:mother_scary_spider_spawn_egg"
+					id: "69DC4044B7AF1F04"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "conrads_wolf_spiders:wolf_spider_allfather"
+					icon: "conrads_wolf_spiders:wolf_spider_allfather_spawn_egg"
+					id: "3100A9799C13B08D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1D1B2F46CCDC8C59"]
+			id: "23AC9ABEBD877764"
+			tasks: [{
+				id: "6CB81A991F995343"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:prudentium_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1D1B2F46CCDC8C59"]
+			id: "4EB5744D12A0FED5"
+			tasks: [{
+				id: "4449127C72C4C35D"
+				item: {
+					Count: 1b
+					id: "mysticalagriculture:tertium_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			id: "346ADEA0F7061BBB"
+			subtitle: "The Ender Dragon drops more than just XP, scales, and an egg. Be on a the lookout for some great weaponry as well!"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "19923AB735CB8520"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.0d
+			y: 14.0d
 		}
 	]
 	title: "Weapons/Tools/Armor"
