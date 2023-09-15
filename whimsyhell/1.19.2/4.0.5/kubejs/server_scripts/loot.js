@@ -8,7 +8,7 @@ LootJS.modifiers((event) => {
     event.addEntityLootModifier("conrads_wolf_spiders:wolf_spider_allfather")
     .killedByPlayer()
     .addWeightedLoot(
-        [0,2],
+        [0,1],
         [
             Item.of("mysticalagriculture:prudentium_axe").withChance(5),
             Item.of("mysticalagriculture:tertium_axe").withChance(5)
@@ -18,14 +18,14 @@ LootJS.modifiers((event) => {
     // Wolf Spider loot modification
     event.addEntityLootModifier("conrads_wolf_spiders:wolf_spider")
     .killedByPlayer()
-    .randomChanceWithEnchantment("minecraft:looting", [0, 0.01, 0.05, 0.10, 0.15, 0.20, 0.25])
+    .randomChanceWithEnchantment("minecraft:looting", [0, 0, 0.01, 0.05, 0.10, 0.15, 0.20])
     .addLoot("mysticalagriculture:inferium_axe");
 
     // Mother Scary Spider loot modification
     event.addEntityLootModifier("radioactive_spiders:mother_scary_spider")
     .killedByPlayer()
     .addWeightedLoot(
-        [0,2],
+        [0,1],
         [
             Item.of("mysticalagriculture:prudentium_axe").withChance(5),
             Item.of("mysticalagriculture:tertium_axe").withChance(5)
@@ -35,13 +35,7 @@ LootJS.modifiers((event) => {
     // Phasing Scary Spider loot modification
     event.addEntityLootModifier("radioactive_spiders:phasing_scary_spider")
     .killedByPlayer()
-    .randomChanceWithEnchantment("minecraft:looting", [0, 0.05, 0.10, 0.15, 0.20, 0.30, 0.40])
-    .addLoot("mysticalagriculture:inferium_axe");
-
-    // Scary Spider loot modification
-    event.addEntityLootModifier("radioactive_spiders:scary_spider")
-    .killedByPlayer()
-    .randomChanceWithEnchantment("minecraft:looting", [0, 0.01, 0.05, 0.10, 0.15, 0.20, 0.25])
+    .randomChanceWithEnchantment("minecraft:looting", [0, 0, 0.01, 0.05, 0.10, 0.15, 0.20])
     .addLoot("mysticalagriculture:inferium_axe");
     
     // Warden loot modification
@@ -78,7 +72,7 @@ LootJS.modifiers((event) => {
     event.addEntityLootModifier("minecraft:ender_dragon")
     .killedByPlayer()
     .addWeightedLoot(
-        [0,2],
+        [0,1],
         [
             Item.of("mysticalagriculture:tertium_axe").withChance(5),
             Item.of("mysticalagriculture:imperium_axe").withChance(5)
