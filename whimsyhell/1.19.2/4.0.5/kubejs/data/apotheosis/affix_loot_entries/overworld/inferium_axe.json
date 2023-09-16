@@ -1,0 +1,14 @@
+{
+  "weight": 100,
+  "quality": 6.0,
+  "stack": {
+    "item": "mysticalagriculture:inferium_axe",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "min_rarity": "uncommon",
+  "max_rarity": "rare"
+}

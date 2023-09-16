@@ -1,0 +1,11 @@
+{
+    "__comment": "All end entities that we consider a boss.",
+    "replace": false,
+    "values": [
+        "apotheosis:fast_enderman",
+        "brutalbosses:shulkerboss",
+        "cataclysm:ender_golem",
+        "cataclysm:ender_guardian",
+        "minecraft:ender_dragon"
+    ]
+}

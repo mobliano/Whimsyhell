@@ -1,0 +1,14 @@
+{
+  "weight": 100,
+  "quality": 8.0,
+  "stack": {
+    "item": "cataclysm:ignitium_chestplate",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:the_nether"
+  ],
+  "min_rarity": "rare",
+  "max_rarity": "epic"
+}
