@@ -6,8 +6,17 @@ console.info('KubeJS - Loading Whimsyhell Startup Events')
 StartupEvents.registry('item', event => {
     // Textures for these items are located at kubejs/assets/whimsyhell/textures/item/
     // event.create('whimsyhell:whimsy_crystal').displayName('§bWhimsy Crystal')
-    event.create('whimsyhell:whimsy_dust').displayName('§bWhimsy Dust')
-    event.create('whimsyhell:whimsy_ingot').displayName('§bWhimsy Ingot')
+    
+    event.create('whimsyhell:whimsy_dust')
+    .displayName('§bWhimsy Dust')
+    .rarity('epic')
+    .glow(true)
+    
+    event.create('whimsyhell:whimsy_ingot')
+    .displayName('§bWhimsy Ingot')
+    .rarity('epic')
+    .glow(true)
+
     // event.create('whimsyhell:whimsy_nugget').displayName('§bWhimsy Nugget')
     // event.create('whimsyhell:whimsy_plate').displayName('§bWhimsy Plate')
 

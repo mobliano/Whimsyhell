@@ -52,6 +52,10 @@ LootJS.modifiers((event) => {
             Item.of("mysticalagriculture:supremium_boots").withChance(5)
         ]
     );
+    event.addEntityLootModifier("minecraft:warden")
+    .killedByPlayer()
+    .randomChanceWithEnchantment("minecraft:looting", [0, 0, 0, 0, 0, 0, 0.01])
+    .addLoot("whimsyhell:whimsy_dust");
 
     // Wither loot modification
     event.addEntityLootModifier("minecraft:wither")
@@ -67,6 +71,10 @@ LootJS.modifiers((event) => {
             Item.of("mysticalagriculture:supremium_leggings").withChance(5)
         ]
     );
+    event.addEntityLootModifier("minecraft:wither")
+    .killedByPlayer()
+    .randomChanceWithEnchantment("minecraft:looting", [0, 0, 0, 0, 0, 0, 0.01])
+    .addLoot("whimsyhell:whimsy_dust");
 
     // Ender Dragon loot modification
     event.addEntityLootModifier("minecraft:ender_dragon")
@@ -75,7 +83,14 @@ LootJS.modifiers((event) => {
         [0,1],
         [
             Item.of("mysticalagriculture:tertium_axe").withChance(5),
-            Item.of("mysticalagriculture:imperium_axe").withChance(5)
+            Item.of("mysticalagriculture:imperium_axe").withChance(5),
+            Item.of("mysticalagriculture:tertium_sword").withChance(5),
+            Item.of("mysticalagriculture:imperium_sword").withChance(5),
+
         ]
     );
+    event.addEntityLootModifier("minecraft:ender_dragon")
+    .killedByPlayer()
+    .randomChanceWithEnchantment("minecraft:looting", [0, 0, 0, 0, 0, 0, 0.01])
+    .addLoot("whimsyhell:whimsy_dust");
 });
