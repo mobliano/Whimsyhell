@@ -1,0 +1,263 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silent_gear"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "theabyss:nosaj_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "729ACD006E733691"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 6.0d
+		hover: [ ]
+		image: "whimsyhell:textures/gui/attributes.png"
+		rotation: 0.0d
+		width: 11.200819672131148d
+		x: -5.600409836065574d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "3FC7D0D807EBF53A"
+			subtitle: "Break down affix items into their respective forging materials."
+			tasks: [{
+				id: "381ABAF93425E045"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7C0FE83F25E131D2"]
+			id: "4EFDBA5BE81D93BF"
+			subtitle: "Use the Reforging Table to add or change affixes on items, including sockets!"
+			tasks: [{
+				id: "3503A0547E8479B3"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3655D173BAC3D975"]
+			id: "7C0FE83F25E131D2"
+			subtitle: "Obtain gem dust by dropping an anvil on any socketable gem."
+			tasks: [{
+				id: "2802F2A6A644EFEE"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "0098E6BE2197CCF9"
+			tasks: [{
+				id: "72AD55BBE514827F"
+				item: "apotheosis:common_material"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "277BC22282198B0F"
+			tasks: [{
+				id: "092125108F8C1ABC"
+				item: "apotheosis:uncommon_material"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "6D53E84864C6DABC"
+			tasks: [{
+				id: "24A112A02A0CE3CD"
+				item: "apotheosis:rare_material"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "41C1C1766D24763E"
+			tasks: [{
+				id: "0F739F79D46B3BDA"
+				item: "apotheosis:epic_material"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3FC7D0D807EBF53A"]
+			id: "7CDFE88536810597"
+			tasks: [{
+				id: "5F7BB7B14701F440"
+				item: "apotheosis:mythic_material"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			description: ["Weapons, tools, and armor all effect your attributes. Unsure if an item is an upgrade? Check your attributes!"]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "apotheosis:apoth_chronicle"
+				}
+			}
+			id: "3655D173BAC3D975"
+			rewards: [
+				{
+					id: "7E95048A145B1B02"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "apotheosis:apoth_chronicle"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EE70EC932C54183"
+					item: "dummmmmmy:target_dummy"
+					type: "item"
+				}
+			]
+			size: 1.25d
+			subtitle: "Adventuring and finding items through loot chests and killing mobs will be critical to your sucess in Whimsyhell. Not only will you be rewarded with great loot, but you will also want to salvage items to obtain tiered crafting and forging materials."
+			tasks: [{
+				id: "71A38FE39A5F5E35"
+				title: "Lengendary Power!!!"
+				type: "checkmark"
+			}]
+			title: "The Power of Affix Items and Socketing Gems!"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3655D173BAC3D975"]
+			id: "22280367BBCC8603"
+			subtitle: "Add sockets to items without reforging"
+			tasks: [{
+				id: "408A7CFE85562D21"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3655D173BAC3D975"]
+			id: "6F99A2A816615790"
+			subtitle: "Unsocket gems from items, destroying the gem in the process."
+			tasks: [{
+				id: "257D2EFF65385A9B"
+				item: "apotheosis:vial_of_expulsion"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3655D173BAC3D975"]
+			id: "0769510463824A9D"
+			subtitle: "Unsocket gems from items, destroying the item in the process."
+			tasks: [{
+				id: "2B2BCBDCAD9922E4"
+				item: "apotheosis:vial_of_extraction"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:target"
+			id: "1AD6EE96BA0F4CF8"
+			rewards: [{
+				id: "396DE97DB6319311"
+				item: {
+					Count: 1b
+					id: "minecraft:splash_potion"
+					tag: {
+						Potion: "goblintraders:powerful_instant_health"
+					}
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "As a general rule, you will find higher tier affix items and gems in more difficult dimensions, however Whimsyhell also has other target farming options available. The mob list below shows items you can potentially drop by killing particular mobs. Good luck!"
+			tasks: [{
+				id: "4B9E17514007917A"
+				title: "Target Farming"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			icon: "apotheosis:warden_tendril"
+			id: "064BB17AF26A2237"
+			optional: true
+			subtitle: "Killing a Warden has a small chance to drop a nice helmet or boots"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "28EADCF67BE76B88"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			icon: "mysticalagradditions:withering_soul"
+			id: "1B8B93150A35E488"
+			optional: true
+			subtitle: "Killing a Wither has a small chance to drop a nice chestplate or leggings"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "6D29B3AFA1968F46"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			id: "346ADEA0F7061BBB"
+			optional: true
+			subtitle: "The Ender Dragon drops more than just XP, scales, and an egg. Be on a the lookout for some great weaponry as well!"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "19923AB735CB8520"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+	]
+	title: "Weapons/Tools/Armor"
+}

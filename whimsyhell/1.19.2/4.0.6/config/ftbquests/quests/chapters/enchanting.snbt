@@ -1,0 +1,182 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanting"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "minecraft:enchanted_book"
+		tag: {
+			StoredEnchantments: [{
+				id: "minecraft:protection"
+				lvl: 1s
+			}]
+		}
+	}
+	id: "340FB49FF9DFC7D0"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "09782838C8FC2C56"
+			tasks: [{
+				id: "744C11C1FFFBA948"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "5F3C7A6B42C30CA7"
+			rewards: [{
+				id: "1713224CA173F93A"
+				item: {
+					Count: 1b
+					id: "xpbook:xp_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Powering an enchanting table with a bookshelves is nice, but is there something better???"
+			tasks: [{
+				id: "48DFAAA9B95A8D11"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "22F910165AADECA6"
+			rewards: [{
+				id: "75E6BD04AB390383"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Oooh what's this?"
+			tasks: [{
+				id: "30E26800F711E940"
+				item: "apotheosis:glowing_hellshelf"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["22F910165AADECA6"]
+			id: "3267AAB26A26C329"
+			rewards: [{
+				id: "22B25E1CE07DAB0B"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Oh my arcana!"
+			tasks: [{
+				id: "5835D8C74D0DB554"
+				item: "apotheosis:heart_seashelf"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3267AAB26A26C329"]
+			id: "481D6AB2678B0F08"
+			rewards: [{
+				id: "35F98BD2A3F90872"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Wow! Such stats!"
+			tasks: [{
+				id: "50F1030AED4AF5EB"
+				item: "apotheosis:pearl_endshelf"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			id: "1A78E5D64C9E3FAB"
+			rewards: [{
+				id: "4DBD499AFA81B9BE"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "The classic anvil. Perfect for putting enchantments on gear, but what if we enchanted the anvil?!?!"
+			tasks: [{
+				id: "4CC6724A1F7A0F95"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5BCC3625C4A215AC"]
+			id: "379424FBBAF22B2F"
+			rewards: [{
+				id: "3A5ADF79F0D09A3C"
+				type: "xp"
+				xp: 600
+			}]
+			subtitle: "The Enchantment Library can store all of your enchanments, and allows you to control the level of each enchantment you pull out. Put enchaments into the library using enchanted books."
+			tasks: [{
+				id: "2A70AC23A08B6AA8"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F3C7A6B42C30CA7"]
+			id: "5BCC3625C4A215AC"
+			tasks: [{
+				id: "1E76DCB4B78A7101"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5BCC3625C4A215AC"]
+			id: "326AC538D793A124"
+			tasks: [{
+				id: "011BAB36BB8C8ECD"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["379424FBBAF22B2F"]
+			id: "65BDD4E79FDD6D7C"
+			tasks: [{
+				id: "3F756B9D9C847CBD"
+				item: "apotheosis:ender_library"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["09782838C8FC2C56"]
+			id: "50FECD5787A104F0"
+			subtitle: "Found some great enchantments on crappy gear? Take them off with this!"
+			tasks: [{
+				id: "3C46BC15AA4A4C12"
+				item: "disenchanting:disenchanter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+	]
+	title: "Enchanting"
+}

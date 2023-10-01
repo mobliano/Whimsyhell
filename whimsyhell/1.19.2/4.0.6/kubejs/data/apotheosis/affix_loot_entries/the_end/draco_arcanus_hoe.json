@@ -1,0 +1,14 @@
+{
+  "weight": 50,
+  "quality": 10.0,
+  "stack": {
+    "item": "forbidden_arcanus:draco_arcanus_hoe",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:the_end"
+  ],
+  "min_rarity": "mythic",
+  "max_rarity": "mythic"
+}
