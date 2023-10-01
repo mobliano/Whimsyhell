@@ -1,0 +1,669 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventuring"
+	group: ""
+	icon: "supplementaries:globe"
+	id: "7B28F5B7839C4CF4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1b
+				id: "forbidden_arcanus:draco_arcanus_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "09A29628E609DFF4"
+			rewards: [{
+				id: "3515E739E1BA27AF"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "69EBFA66923FEA6C"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 50000
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "theabyss:nosaj_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "13BE3388128D4CCC"
+			rewards: [{
+				id: "0017512F2DD8B50A"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "4478779C92759A73"
+				stat: "minecraft:damage_dealt"
+				type: "stat"
+				value: 10000000
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: "apotheosis:boss_summoner"
+			id: "5E344F3C31346A5C"
+			rewards: [{
+				id: "747ACFBB5220150C"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "7A244367481D5E75"
+				stat: "minecraft:time_since_death"
+				type: "stat"
+				value: 10000000
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "524C33EC7423D106"
+			rewards: [{
+				id: "12AACD3D33DB94C6"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "3138F6D4980FDF3F"
+				type: "kill"
+				value: 10000L
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "0190C0B2128E2903"
+			rewards: [{
+				id: "24479997094B65F7"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "46D6A6E7984B97E4"
+				type: "kill"
+				value: 10000L
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "45547D62D79F85AA"
+			rewards: [{
+				id: "36050C06D511461A"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "252BFB64FA6B3C34"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			icon: "minecraft:skeleton_horse_spawn_egg"
+			id: "153890F80D2FD1DA"
+			rewards: [{
+				id: "3C2BC45278B4BE39"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:skeleton_horse"
+				icon: "minecraft:skeleton_horse_spawn_egg"
+				id: "2DB0545EDDCB805E"
+				type: "kill"
+				value: 1000L
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			icon: "goblintraders:goblin_trader_spawn_egg"
+			id: "18B8A31091B4CE02"
+			rewards: [{
+				id: "4A43CCED3DA0249D"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "goblintraders:goblin_trader"
+				icon: "goblintraders:goblin_trader_spawn_egg"
+				id: "7E592569DDE735C9"
+				type: "kill"
+				value: 100L
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "22B1F7DC9A37B073"
+			rewards: [{
+				id: "1DC637831B73DAD2"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "3C5F6C8BF1A248CF"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			icon: "mysticalagradditions:withering_soul"
+			id: "7BC908C40C583090"
+			rewards: [{
+				id: "49AE8988F9140B43"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "mysticalagradditions:withering_soul"
+				id: "2ABB455BA0DF66CB"
+				type: "kill"
+				value: 75L
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			icon: "cataclysm:the_leviathan_spawn_egg"
+			id: "4614D1124AF7EB0E"
+			rewards: [{
+				id: "41FA624FF8165FC9"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				icon: "cataclysm:the_leviathan_spawn_egg"
+				id: "741EA437CBD55CC6"
+				type: "kill"
+				value: 75L
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			icon: "cataclysm:the_harbinger_spawn_egg"
+			id: "038FADBC48831323"
+			rewards: [{
+				id: "368BC5A56ACFBE64"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				icon: "cataclysm:the_harbinger_spawn_egg"
+				id: "460C0D5E8BC82A37"
+				type: "kill"
+				value: 75L
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "24E258DD1E201582"
+			rewards: [{
+				id: "7A019D936A5DE51B"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "41830C0017D4D904"
+				type: "kill"
+				value: 2500L
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			id: "2863037FF4F31E54"
+			rewards: [{
+				id: "4E8379D38EBB070A"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "alexsmobs:roadrunner_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0BA10CCAD33A595C"
+				stat: "minecraft:sprint_one_cm"
+				type: "stat"
+				value: 100000000
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			icon: "minecraft:warden_spawn_egg"
+			id: "62435966454F835E"
+			rewards: [{
+				id: "5CECA86A6E89901C"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:warden_spawn_egg"
+				id: "1B6B20EFB0EF78E9"
+				type: "kill"
+				value: 75L
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "76D1E9FA55ADA0B6"
+			rewards: [{
+				id: "4FDCCEEFA8DF815C"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:wandering_trader"
+				id: "47D2064BEF3AFFC8"
+				type: "kill"
+				value: 100L
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "7125B6900F6E779E"
+			rewards: [{
+				id: "7ACCA4A94EAA385E"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "5B148151DCE8E67D"
+				type: "kill"
+				value: 5000L
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			id: "2F7D40668711AE64"
+			rewards: [{
+				id: "0FA87ADBEAE17715"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "0BB4E52D789E3FD4"
+				type: "kill"
+				value: 2500L
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "2D6E79EFF2979C07"
+			rewards: [{
+				id: "76A0275FA6161C9D"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "5310FDF90A5D52AE"
+				type: "kill"
+				value: 75L
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "2C202E8351F7460E"
+			rewards: [{
+				id: "7618B18CB845DD43"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "rsquare"
+			tasks: [{
+				advancement: "mca:adventure/kill_grim_reaper"
+				criterion: ""
+				id: "2698B5EB2824756E"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			id: "3E895E888DB81C7E"
+			rewards: [{
+				id: "6008336F3819D98D"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "rsquare"
+			tasks: [{
+				advancement: "mca:adventure/staff_of_life"
+				criterion: ""
+				icon: {
+					Count: 1b
+					id: "mca:staff_of_life"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "423220C02CE537D0"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			id: "3DE0AEED9737D0AD"
+			rewards: [{
+				id: "57E979BBB33C9B3A"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "rsquare"
+			tasks: [{
+				advancement: "apotheosis:affix/rare"
+				criterion: ""
+				id: "5F241DF884DB2C9A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			id: "5ECF6941C0DBB311"
+			rewards: [{
+				id: "4302E8A62B7B284A"
+				type: "xp"
+				xp: 900
+			}]
+			shape: "rsquare"
+			tasks: [{
+				advancement: "apotheosis:affix/epic"
+				criterion: ""
+				id: "4C581D4458AAF624"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "417965A4FE0C2450"
+			rewards: [{
+				id: "6D2B2652BBD6BAA9"
+				type: "xp"
+				xp: 1500
+			}]
+			shape: "rsquare"
+			tasks: [{
+				advancement: "apotheosis:affix/mythic"
+				criterion: ""
+				id: "6F92C9072101A024"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "3F61606464B75BE2"
+			rewards: [{
+				id: "00F3A376948B066A"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				advancement: "apotheosis:affix/gem"
+				criterion: ""
+				id: "6019D3CBE63A8C45"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 10.0d
+		}
+		{
+			id: "21846668DA60734A"
+			rewards: [{
+				id: "24FE898CF40FD522"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				advancement: "endrem:main/root"
+				criterion: ""
+				id: "5664A1483509F0C5"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			id: "2F6B3250F612CF50"
+			rewards: [{
+				id: "411F4117D0282186"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				advancement: "apotheosis:spawner/root"
+				criterion: ""
+				id: "269CA92B9A032304"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			id: "247E1CCF22435775"
+			rewards: [{
+				id: "02C8ABD90398ECED"
+				type: "xp"
+				xp: 900
+			}]
+			tasks: [{
+				advancement: "lootr:100loot"
+				criterion: ""
+				icon: "lootr:trophy"
+				id: "598E76CCE8CCA5F9"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "2E15EA869E6DAD87"
+			rewards: [{
+				id: "3056A76972E6BF1B"
+				type: "xp"
+				xp: 900
+			}]
+			tasks: [{
+				advancement: "minecraft:adventure/kill_mob_near_sculk_catalyst"
+				criterion: ""
+				id: "153BE4837A45DB10"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			id: "214A625B6312D0FF"
+			rewards: [{
+				id: "01005ABF26068D6D"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				icon: "theabyss:broken_bone"
+				id: "1DB93B2399F50338"
+				stat: "minecraft:damage_taken"
+				type: "stat"
+				value: 1000000
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "7F94716046ADFB9C"
+			rewards: [{
+				id: "0A9F3D8CC5A564FB"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				icon: "supplementaries:rope"
+				id: "4D0869E8DF0EA129"
+				stat: "minecraft:climb_one_cm"
+				type: "stat"
+				value: 50000000
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "24BFEAFF9312D741"
+			rewards: [{
+				id: "33475502CC87BBE7"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "forbidden_arcanus:draco_arcanus_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "68BFB252D4066B7C"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1000
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "2A79A00F6BCB24DD"
+			rewards: [{
+				id: "77D33DE065A6F21B"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7E45745DC8F910F2"
+				stat: "minecraft:aviate_one_cm"
+				type: "stat"
+				value: 500000000
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "4421BE74D67DB937"
+			rewards: [{
+				id: "502DB37379393B62"
+				type: "xp_levels"
+				xp_levels: 500
+			}]
+			shape: "pentagon"
+			size: 1.75d
+			tasks: [{
+				entity: "theabyss:nightblade_boss"
+				icon: "theabyss:nightblade_boss_spawn_egg"
+				id: "2C48024755262782"
+				type: "kill"
+				value: 100L
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	title: "Adventuring"
+}

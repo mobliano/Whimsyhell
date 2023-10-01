@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:netherite_leggings",
+		"mysticalagriculture:supremium_leggings",
+		"cataclysm:ignitium_leggings",
+		"piglin_expansion:divinity_netherite_armor_leggings"
+	]
+}

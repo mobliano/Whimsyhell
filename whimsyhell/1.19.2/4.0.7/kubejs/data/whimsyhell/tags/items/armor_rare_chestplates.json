@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:netherite_chestplate",
+		"mysticalagriculture:supremium_chestplate",
+		"cataclysm:ignitium_chestplate",
+		"piglin_expansion:divinity_netherite_armor_chestplate"
+	]
+}

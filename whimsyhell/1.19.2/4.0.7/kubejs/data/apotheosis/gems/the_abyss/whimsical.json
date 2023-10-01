@@ -1,0 +1,199 @@
+{
+	"variant": "whimsical",
+	"weight": 5,
+	"quality": 1.5,
+	"dimensions": ["minecraft:the_abyss"],
+	"unique": true,
+	"min_rarity": "mythic",
+	"bonuses": [{
+			"type": "apotheosis:multi_attribute",
+			"desc": "bonus.apotheosis:multi_attr.desc.and",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"sword", "trident"
+				]
+			},
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 15,
+						"ancient": 20
+					}
+				},
+				{
+					"attribute": "apotheosis:prot_pierce",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 12,
+						"ancient": 16
+					}
+				},
+				{
+					"attribute": "apotheosis:armor_pierce",
+					"operation": "MULTIPLY_TOTAL",
+					"values": {
+						"mythic": -0.35,
+						"ancient": -0.45
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_chance",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.60,
+						"ancient": 0.80
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_damage",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.75
+					}
+				},
+				{
+					"attribute": "minecraft:generic.attack_speed",
+					"operation": "MULTIPLY_BASE",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.80
+					}
+				}
+			]
+		},
+		{
+			"type": "apotheosis:multi_attribute",
+			"desc": "bonus.apotheosis:multi_attr.desc.and",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 20,
+						"ancient": 25
+					}
+				},
+				{
+					"attribute": "apotheosis:prot_shred",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.75
+					}
+				},
+				{
+					"attribute": "apotheosis:armor_shred",
+					"operation": "MULTIPLY_TOTAL",
+					"values": {
+						"mythic": -0.35,
+						"ancient": -0.45
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_chance",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.60,
+						"ancient": 0.80
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_damage",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.75
+					}
+				},
+				{
+					"attribute": "minecraft:generic.attack_speed",
+					"operation": "MULTIPLY_BASE",
+					"values": {
+						"mythic": 0.75,
+						"ancient": 1
+					}
+				}
+			]
+		},
+		{
+			"type": "apotheosis:multi_attribute",
+			"desc": "bonus.apotheosis:multi_attr.desc.and",
+			"gem_class": {
+				"key": "ranged_weapon",
+				"types": [
+					"trident",
+					"bow",
+					"crossbow"
+				]
+			},
+			"modifiers": [
+				{
+					"attribute": "apotheosis:arrow_damage",
+					"operation": "MULTIPLY_BASE",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.70
+					}
+				},
+				{
+					"attribute": "apotheosis:arrow_velocity",
+					"operation": "MULTIPLY_BASE",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.70
+					}
+				},
+				{
+					"attribute": "apotheosis:draw_speed",
+					"operation": "MULTIPLY_BASE",
+					"values": {
+						"mythic": 0.75,
+						"ancient": 1
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_chance",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.60,
+						"ancient": 0.80
+					}
+				},
+				{
+					"attribute": "apotheosis:crit_damage",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 0.50,
+						"ancient": 0.75
+					}
+				},
+				{
+					"attribute": "apotheosis:prot_pierce",
+					"operation": "ADDITION",
+					"values": {
+						"mythic": 12,
+						"ancient": 16
+					}
+				},
+				{
+					"attribute": "apotheosis:armor_pierce",
+					"operation": "MULTIPLY_TOTAL",
+					"values": {
+						"mythic": -0.35,
+						"ancient": -0.45
+					}
+				}
+			]
+		}
+	]
+}
