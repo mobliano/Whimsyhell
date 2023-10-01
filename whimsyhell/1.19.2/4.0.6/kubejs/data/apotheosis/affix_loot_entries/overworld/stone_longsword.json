@@ -1,0 +1,13 @@
+{
+  "weight": 95,
+  "quality": 2.0,
+  "stack": {
+    "item": "vtaw_mw:stone_longsword",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "max_rarity": "rare"
+}

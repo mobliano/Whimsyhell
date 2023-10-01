@@ -1,0 +1,14 @@
+{
+  "weight": 50,
+  "quality": 10.0,
+  "stack": {
+    "item": "theabyss:aberythe_armor_leggings",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "theabyss:the_abyss"
+  ],
+  "min_rarity": "mythic",
+  "max_rarity": "ancient"
+}

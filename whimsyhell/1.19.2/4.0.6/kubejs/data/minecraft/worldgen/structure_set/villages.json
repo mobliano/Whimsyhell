@@ -1,0 +1,44 @@
+{
+    "structures": [
+        {
+            "structure": "minecraft:village_plains",
+            "weight": 1
+        },
+        {
+            "structure": "minecraft:village_desert",
+            "weight": 1
+        },
+        {
+            "structure": "minecraft:village_savanna",
+            "weight": 1
+        },
+        {
+            "structure": "minecraft:village_snowy",
+            "weight": 1
+        },
+        {
+            "structure": "minecraft:village_taiga",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 10387312,
+        "exclusion_zone": [
+            {
+                "other_set": "wythers:village_badlands_desert",
+                "chunk_count": 8
+            },
+            {
+                "other_set": "wythers:village_badlands",
+                "chunk_count": 8
+            },
+            {
+                "other_set": "wythers:village_wooded_badlands",
+                "chunk_count": 8
+            }
+        ],
+        "spacing": 40,
+        "separation": 9
+    }
+}

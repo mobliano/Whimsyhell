@@ -1,0 +1,196 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: ""
+	icon: "create:large_cogwheel"
+	id: "13A5AE1973A8CC1B"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "028BA1FC65BC9F76"
+			subtitle: "You can use Create to build and automate many tasks."
+			tasks: [{
+				id: "1005F0624F6DA304"
+				title: "Create all the things!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "22DE3BC2A37EE1AB"
+			optional: true
+			tasks: [{
+				id: "2C368AA823DFE9EE"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22DE3BC2A37EE1AB"]
+			id: "0669BE6E658ECCAE"
+			optional: true
+			tasks: [{
+				id: "7F0F1D8B3FD58004"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33828C990015BE6D"]
+			id: "6CE9FDFA07612320"
+			tasks: [{
+				id: "18CD2319BC288136"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E766FC6C7D89287"]
+			id: "33828C990015BE6D"
+			tasks: [{
+				id: "0D4983907E6559BC"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["033CE0BABF70F9A6"]
+			id: "52C0D0ACF349C9F2"
+			tasks: [{
+				id: "4B5A7C9C8CA36A17"
+				item: "create:brass_sheet"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "3FB921D3B225E7A0"
+			optional: true
+			subtitle: "Create stress units to power your equipment"
+			tasks: [{
+				id: "1887E2C3F6A9210A"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "257B8E6C58F3B5D2"
+			optional: true
+			subtitle: "Wind power is so much better than water!"
+			tasks: [{
+				id: "0E1A28FE22359A55"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "2348F9D46B380D03"
+			optional: true
+			subtitle: "Now we're cookin'!"
+			tasks: [{
+				id: "6FA92207A623B6C5"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CE9FDFA07612320"]
+			id: "033CE0BABF70F9A6"
+			tasks: [{
+				id: "13DEB110CB5604EC"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0669BE6E658ECCAE"]
+			id: "0E766FC6C7D89287"
+			subtitle: "Take this with you to the Nether and capture a Blaze in it!"
+			tasks: [{
+				id: "421F8EA42ABE9D36"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "37616FB187AA9EC9"
+			subtitle: "You'll need quite a few of these to make endgame materials"
+			tasks: [{
+				id: "2EEAC361B8226855"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "1D8E9597DC169D5A"
+			tasks: [{
+				id: "4F9F2994DDEFD47A"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "5CC4C109E5548C24"
+			subtitle: "Generate Flux Energy (FE) for your more modern contraptions, such as Refined Storage!"
+			tasks: [{
+				id: "1A1C736D5ED806F2"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["028BA1FC65BC9F76"]
+			id: "0AD6F59894780E24"
+			subtitle: "This nifty little jetpack is great by itself, but it can also be use to help boost Elytra flight. Be sure you don't run out of air though!"
+			tasks: [{
+				id: "4C9DA6A2AA48BF48"
+				item: {
+					Count: 1b
+					id: "create_jetpack:jetpack"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Create"
+}

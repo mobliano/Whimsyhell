@@ -1,0 +1,13 @@
+{
+  "weight": 60,
+  "quality": 5.0,
+  "stack": {
+    "item": "toolbelt:belt",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "max_rarity": "rare"
+}
