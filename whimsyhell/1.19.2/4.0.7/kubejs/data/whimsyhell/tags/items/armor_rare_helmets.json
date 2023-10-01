@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:netherite_helmet",
+		"mysticalagriculture:supremium_helmet",
+		"cataclysm:ignitium_helmet",
+		"piglin_expansion:divinity_netherite_armor_helmet"
+	]
+}

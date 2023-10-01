@@ -1,0 +1,14 @@
+{
+  "weight": 60,
+  "quality": 8.0,
+  "stack": {
+    "item": "piglin_expansion:divinity_netherite_armor_helmet",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "dimensions": [
+    "minecraft:the_nether"
+  ],
+  "min_rarity": "rare",
+  "max_rarity": "epic"
+}
